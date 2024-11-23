@@ -1,0 +1,416 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    padding-top: 40px;
+    background-color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; /* Initially at the bottom */
+  height: 80px; /* Full size when at the bottom */
+  background: linear-gradient(to right, 
+      rgb(13, 116, 64) 5%, 
+      rgb(4, 136, 156) 100%
+  );
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Navbar after scrolling starts (moves to top) */
+.navbar.navbar-scrolled {
+  bottom: auto; /* Remove bottom positioning when scrolling */
+  top: 0;
+}
+
+/* Shrinking navbar */
+.navbar.navbar-shrink {
+  height: 60px; /* Reduced height */
+  padding: 5px 0; /* Adjust padding to match new height */
+}
+
+/* Navbar content adjustment */
+.navbar .logo {
+  font-size: 1.5rem; /* Ensure logo remains visible */
+}
+
+.navbar .nav-links a {
+  margin-left: 1rem; /* Optional adjustment */
+}
+
+
+
+.navbar.scrolled {
+  top: 0; /* Move to top on scroll */
+  bottom: auto; /* Remove bottom positioning */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1.5rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffcc00;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Style for the service images container */
+
+.service-details {
+    background-color: white;
+    margin: 2rem 0;
+  }
+  
+  .service-details h1 {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    background-color: black;
+  }
+  
+  .service-details p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  #service-images {
+    position: relative;
+    perspective: 1000px; /* Enables 3D perspective */
+    overflow: hidden;
+    height: 400px; /* Adjust as needed */
+    display: flex;
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Optionally, vertically centers the image if needed */
+    width:100%;
+    background-color: black;
+}
+
+#service-images img {
+    width: 70%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
+}
+  
+  .tab-content {
+    margin-top: 2rem;
+    padding: 0 10rem 10rem;
+  }
+  
+  .tab-content h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .tab-content p {
+    color: #555;
+    margin-top: 0.5rem;
+    line-height: 1.8;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.tab.active {
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-top: 2px solid #007BFF;
+}
+
+.tab:hover {
+    background: #e0e0e0;
+}
+
+.tab-content {
+    border-radius: 5px;
+    background: #fff;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane #questionanswer{
+    font-weight: bold;
+}
+.tab-pane:first-child {
+    display: block;
+}
+
+/* General styling for all images */
+.tab-content img {
+  display: block;
+  margin: 15px auto;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Landscape images (70% of viewport width) */
+.tab-content img[alt="landscape"] {
+  width: 70vw;
+}
+
+/* Square images (default to 30% of viewport width for consistency) */
+.tab-content img[alt="square"] {
+  width: 40vw;
+  max-width: 300px;
+  margin: 10px; /* Add spacing around images */
+}
+
+/* Full-width table images */
+.tab-content img[alt="table"] {
+  width: 100vw;
+  max-width: 100%;
+}
+
+/* Flex container for images */
+.tab-content .flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center align images */
+  gap: 10px; /* Add spacing between items */
+}
+
+/* Place square images side-by-side when there's enough space */
+.tab-content .flex-container img[alt="square"] {
+  flex: 1 1 30%; /* Allow resizing and alignment */
+  max-width: 300px; /* Ensure consistent sizing */
+}
+
+/* General Table Styling */
+.lighting-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text */
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* Header Styling */
+.lighting-table th {
+  background-color: #4a4a4a; /* Dark header background */
+  color: #fff; /* White text */
+  padding: 12px 15px;
+  text-align: center; /* Center-align header text */
+  text-transform: uppercase; /* Uppercase header text */
+  font-weight: bold;
+}
+
+/* Table Body Styling */
+.lighting-table td {
+  padding: 10px 15px;
+  border: 1px solid #ddd; /* Light border for cells */
+  text-align: center; /* Center-align text in cells */
+}
+
+/* Alternating Row Colors */
+.lighting-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for alternating rows */
+}
+
+/* Hover Effect */
+.lighting-table tr:hover {
+  background-color: #e6e6e6; /* Slightly darker gray on hover */
+}
+
+/* Table Borders */
+.lighting-table td, .lighting-table th {
+  border: 1px solid #ddd; /* Cell borders */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .lighting-table {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+
+/* Responsive behavior: Stack square images on smaller screens */
+@media (max-width: 768px) {
+  .tab-content .flex-container img[alt="square"] {
+    flex: 1 1 100%; /* Stack images on narrow screens */
+  }
+}
+  @media (max-width: 768px) {
+    header.navbar .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header.navbar .nav-links a {
+      margin: 5px 0;
+    }
+  
+    #service-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #service-images img {
+      max-width: 90%;
+    }
+  
+    .service-details h1 {
+      font-size: 2rem;
+    }
+  
+    .service-details p {
+      font-size: 1rem;
+    }
+  
+    #tab-content h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+/* General Footer Styling */
+.footer {
+  background-color: #20232a;
+  color: #ffffff;
+  /* padding: 20px 20px; */
+  font-family: Arial, sans-serif;
+}
+
+.fcontainer {
+  display: flex;
+  justify-content: space-around; /* Spread items farther apart */
+  align-items: center;; /* Align items to the top */
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+  gap: 40px; /* Add spacing between columns */
+  padding-top: 4rem;
+}
+
+/* Footer Columns */
+.footer-column {
+  flex: 1; /* Ensure equal width for all columns */
+  max-width: 300px; /* Limit width for readability */
+  min-width: 200px; /* Prevent columns from shrinking too much */
+}
+
+/* Contact Info Styling */
+.contact-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #61dafb;
+}
+
+.contact-info p,
+.contact-details p {
+  line-height: 1.6;
+  font-size: 0.9em;
+}
+
+.contact-info a,
+.contact-details a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.contact-info a:hover,
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Links Styling */
+.footer-links nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links nav ul li {
+  margin-bottom: 8px;
+  margin-left:50%;
+}
+
+.footer-links nav ul li a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-links nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.8em;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+} 
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+}

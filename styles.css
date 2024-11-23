@@ -1,0 +1,366 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Navbar Styles */
+/* Base navbar style */
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Initially at the bottom */
+    height: 80px; /* Full size when at the bottom */
+    background: linear-gradient(to right, 
+        rgb(13, 116, 64) 5%, 
+        rgb(4, 136, 156) 100%
+    );
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Navbar after scrolling starts (moves to top) */
+.navbar.navbar-scrolled {
+    bottom: auto; /* Remove bottom positioning when scrolling */
+    top: 0;
+}
+
+/* Shrinking navbar */
+.navbar.navbar-shrink {
+    height: 60px; /* Reduced height */
+    padding: 5px 0; /* Adjust padding to match new height */
+}
+
+/* Navbar content adjustment */
+.navbar .logo {
+    font-size: 1.5rem; /* Ensure logo remains visible */
+}
+
+.navbar .nav-links a {
+    margin-left: 1rem; /* Optional adjustment */
+}
+
+
+
+.navbar.scrolled {
+    top: 0; /* Move to top on scroll */
+    bottom: auto; /* Remove bottom positioning */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+  }
+
+
+/* Full-Screen Section Styles */
+/* Full-Screen Section with Parallax Effect */
+.full-screen-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full screen width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background-image: url('/iconsThumbs/hero-bike-scene.jpeg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center;
+    background-attachment: fixed; /* Creates the parallax effect */
+    z-index: -1;
+}
+
+.full-screen-content {
+    z-index: 1; /* Ensures content stays above the background */
+    text-align: center;
+    color: #111;
+    padding: 20px;
+    background-color: transparent; /* Add a semi-transparent overlay for better readability */
+    border-radius: 10px; /* Optional: Adds rounded corners to the content box */
+}
+
+.full-screen-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.full-screen-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#scrollDownGif {
+    position:absolute; /* Keeps the GIF fixed in the viewport, even when scrolling */
+    bottom: 100px;    /* 20px from the bottom edge */
+    left: 100px;      /* 20px from the left edge */
+    z-index: 10;   /* Ensures it appears above other elements */
+    width: 80px;     /* Adjust width as needed */
+    height: auto;    /* Maintain aspect ratio */
+}
+  
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into multiple rows */
+    justify-content: space-around; /* Ensures proper spacing between tiles */
+    gap: 2rem; /* Space between the tiles */
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Individual Hero Services (Tile) */
+.hero-services {
+    position: relative;
+    width: calc(50% - 1rem); /* Each tile takes 50% width minus spacing */
+    background: white;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.hero-services:hover {
+    transform: none; /* Ensure hover effects don't disrupt layout */
+    box-shadow: none;
+}
+
+.visit-page-text {
+    margin-top: auto; /* Push it to the bottom of the tile */
+    padding: 10px;
+    background-color: #c0daf7; /* Button-like background */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.hero-services:hover .visit-page-text {
+    background-color: #357ab8; /* Darker blue on hover */
+    margin-top: auto; /* Push it to the bottom of the tile */
+    padding: 10px;
+    background-color: #c0daf7; /* Button-like background */
+    color: #222;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.serviceTitle{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.serviceTitle:hover {
+    background-color: #222;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; /* Ensures consistent aspect ratio */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.hero-services:hover .hero-image img {
+    transform: scale(1.01);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description-overlay {
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Light background initially */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: background 0.3s ease, padding 0.3s ease;
+    pointer-events: none; /* No interaction when not hovered */
+}
+
+.hero-services:hover .hero-description-overlay {
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    pointer-events: auto; /* Enable interactions when hovered */
+}
+
+/* Static Description Section Below Image */
+.hero-text {
+    text-align: justify;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition properties */
+    overflow: hidden;
+    max-height: calc(1.9rem * 4 + 1rem); /* Initial max-height */
+    opacity: 0.9; /* Slightly less opaque for a clean look */
+}
+
+/* On hover, change max-height and opacity smoothly */
+.hero-services:hover .hero-text {
+    max-height: 1000px; /* Set a large value to accommodate the content */
+    opacity: 1;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .hero-services {
+        width: 100%; /* Stack tiles into a single column */
+    }
+}
+
+/* General Footer Styling */
+/* General Footer Styling */
+.footer {
+    background-color: #20232a;
+    color: #ffffff;
+    /* padding: 20px 20px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  .fcontainer {
+    display: flex;
+    justify-content: space-around; /* Spread items farther apart */
+    align-items: center;; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 40px; /* Add spacing between columns */
+    padding-top: 4rem;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1; /* Ensure equal width for all columns */
+    max-width: 300px; /* Limit width for readability */
+    min-width: 200px; /* Prevent columns from shrinking too much */
+  }
+  
+  /* Contact Info Styling */
+  .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #61dafb;
+  }
+  
+  .contact-info p,
+  .contact-details p {
+    line-height: 1.6;
+    font-size: 0.9em;
+  }
+  
+  .contact-info a,
+  .contact-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover,
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Links Styling */
+  .footer-links nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links nav ul li {
+    margin-bottom: 8px;
+    margin-left:50%;
+  }
+  
+  .footer-links nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-links nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+  } 
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column; /* Stacks hero services vertically on smaller screens */
+    }
+
+    .hero-services {
+        margin-bottom: 20px;
+    }
+}

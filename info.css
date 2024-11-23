@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; /* Initially at the bottom */
+    height: 80px; /* Full size when at the bottom */
+    background: linear-gradient(to right, 
+        rgb(13, 116, 64) 5%, 
+        rgb(4, 136, 156) 100%
+    );
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Navbar after scrolling starts (moves to top) */
+.navbar.navbar-scrolled {
+    bottom: auto; /* Remove bottom positioning when scrolling */
+    top: 0;
+}
+
+/* Shrinking navbar */
+.navbar.navbar-shrink {
+    height: 60px; /* Reduced height */
+    padding: 5px 0; /* Adjust padding to match new height */
+}
+
+/* Navbar content adjustment */
+.navbar .logo {
+    font-size: 1.5rem; /* Ensure logo remains visible */
+}
+
+.navbar .nav-links a {
+    margin-left: 1rem; /* Optional adjustment */
+}
+
+
+
+.navbar.scrolled {
+    top: 0; /* Move to top on scroll */
+    bottom: auto; /* Remove bottom positioning */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+  }
+  
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* Generic styles for the slider */
+.about-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+
+/* Active slide is fully visible */
+.slide.active {
+  opacity: 1; /* Fully visible when active */
+}
+
+
+.slide img {
+    flex: 1;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slide-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.slide-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 90px; /* Offset for fixed navbar */
+    padding: 50px;
+    background-color: #fff;
+    color: #333;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify; /* Justify the text */
+}
+
+/* Title Styles */
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.main-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.main-content h3 {
+    margin-bottom: 20px;
+    color: #003a30;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease;
+  }
+  
+  .card a:hover {
+    color: #004999;
+  }
+  
+/* Form Card */
+.form-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+.form-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.form-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align the label and select vertically center */
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 10px; /* Space between label and select */
+    white-space: nowrap; /* Prevent the label from wrapping */
+}
+
+.form-group select {
+    width: auto; /* Adjust width to fit the content */
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    flex-grow: 1; /* Allow select to take available space */
+}
+
+/* Style for the select dropdown and its options */
+.form-group select option[value="Ich stimme zu"]:checked {
+    background-color: #4CAF50; /* Green background for 'I agree' option */
+    color: white;
+}
+
+.form-group select option[value="Nicht einverstanden"]:checked {
+    background-color: #af534c; /* Red background for 'Not agreed' option */
+    color: white;
+}
+
+.form-group select:focus {
+    border-color: #4CAF50; /* Green border when select box is focused */
+}
+  
+/* General Input/Checkbox Styles */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+/* Button styles */
+#button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 8px;
+    overflow: visible;
+}
+
+#button:disabled {
+    background-color: #45a049;
+    cursor: not-allowed;
+}
+
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 20px;
+    }
+  
+    .form-card {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .form-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea,
+    .form-group select {
+      font-size: 0.95rem;
+    }
+  }
+
+  
+ul.square-list {
+    list-style-type: square; /* Square bullet style */
+    padding-left: 20px; /* Add indentation */
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size */
+  }
+  
+  ul.square-list li {
+    margin-bottom: 20px; /* Space between items */
+  }
+
+/* General Table Styling */
+.cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f8f9fa; /* Light background */
+    color: #212529; /* Dark text */
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  /* Header Styling */
+  .cookie-table th {
+    background-color: #343a40; /* Dark header background */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Row Styling */
+  .cookie-table td {
+    padding: 10px 15px;
+    border: 1px solid #dee2e6; /* Light gray border */
+  }
+  
+  .cookie-table tr:nth-child(even) {
+    background-color: #f1f3f5; /* Light gray for alternating rows */
+  }
+  
+  .cookie-table tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+  }
+  
+  
+/* Paragraph Styles */
+.main-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+  
+  /* Footer Columns */
+/* General Footer Styling */
+/* General Footer Styling */
+.footer {
+    background-color: #20232a;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+  }
+  
+  .fcontainer {
+    display: flex;
+    justify-content: space-around; /* Spread items farther apart */
+    align-items: center;; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 40px; /* Add spacing between columns */
+    padding-top: 4rem;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1; /* Ensure equal width for all columns */
+    max-width: 300px; /* Limit width for readability */
+    min-width: 200px; /* Prevent columns from shrinking too much */
+  }
+  
+  /* Contact Info Styling */
+  .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #61dafb;
+  }
+  
+  .contact-info p,
+  .contact-details p {
+    line-height: 1.6;
+    font-size: 0.9em;
+  }
+  
+  .contact-info a,
+  .contact-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover,
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Links Styling */
+  .footer-links nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links nav ul li {
+    margin-bottom: 8px;
+    margin-left:50%;
+  }
+  
+  .footer-links nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-links nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+  } 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .info-content {
+        padding: 1rem;
+    }
+
+    .info-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-images img {
+        max-width: 90%;
+    }
+
+    .info-header h1 {
+        font-size: 2rem;
+    }
+
+    .info-header p {
+        font-size: 1rem;
+    }
+
+    .info-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-content p {
+        font-size: 1rem;
+    }
+}
