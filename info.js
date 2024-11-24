@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const pageData = JSON.parse(localStorage.getItem("pageData"));
 
     const mainContent = document.querySelector(".main-content");
+    
+    // Toggle navigation menu on click
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active'); // Toggle hamburger to X
+    });
 
     if (selectedPage && pageData && pageData[selectedPage]) {
         let contentHTML = `<h1>${pageData[selectedPage].title}</h1>`;

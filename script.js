@@ -1,6 +1,15 @@
 let lastScrollTop = 0; // Keep track of the last scroll position
 const navbar = document.querySelector('.navbar');
 
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle navigation menu on click
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active'); // Toggle hamburger to X
+});
+
 window.addEventListener('scroll', function() {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -482,55 +491,55 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     ];
 
-    const heroSection = document.querySelector(".hero-section");
+    // const heroSection = document.querySelector(".hero-section");
 
-    servicesData.forEach((service) => {
-      const heroService = document.createElement("div");
-      heroService.className = "hero-services";
-      heroService.dataset.id = service.id;
+    // servicesData.forEach((service) => {
+    //   const heroService = document.createElement("div");
+    //   heroService.className = "hero-services";
+    //   heroService.dataset.id = service.id;
     
-      let captions = `
-        ${service.captionHeading ? `<h3>${service.captionHeading}</h3>` : ""}
-        ${service.captionP1 ? `<p>${service.captionP1}</p>` : ""}
-        ${service.captionP2 ? `<p>${service.captionP2}</p>` : ""}
-        ${service.captionP3 ? `<p>${service.captionP3}</p>` : ""}
-        ${service.captionP4 ? `<p>${service.captionP4}</p>` : ""}
-      `;
+    //   let captions = `
+    //     ${service.captionHeading ? `<h3>${service.captionHeading}</h3>` : ""}
+    //     ${service.captionP1 ? `<p>${service.captionP1}</p>` : ""}
+    //     ${service.captionP2 ? `<p>${service.captionP2}</p>` : ""}
+    //     ${service.captionP3 ? `<p>${service.captionP3}</p>` : ""}
+    //     ${service.captionP4 ? `<p>${service.captionP4}</p>` : ""}
+    //   `;
     
-      heroService.innerHTML = `
-        <div class="serviceTitle">
-          ${service.title}
-          <div class="hero-image">
-          <img src="${service.images[0]}" alt="${service.title}">
-          <div class="hero-description-overlay">
-            ${captions}
-          </div>  
-        </div>
-        </div>
-        <div class="hero-text">
-          <p>${service.description}</p>
-          <div class="visit-page-text">Visit Page</div>
-        </div>
-      `;
+    //   heroService.innerHTML = `
+    //     <div class="serviceTitle">
+    //       ${service.title}
+    //       <div class="hero-image">
+    //       <img src="${service.images[0]}" alt="${service.title}">
+    //       <div class="hero-description-overlay">
+    //         ${captions}
+    //       </div>  
+    //     </div>
+    //     </div>
+    //     <div class="hero-text">
+    //       <p>${service.description}</p>
+    //       <div class="visit-page-text">Visit Page</div>
+    //     </div>
+    //   `;
     
-      heroSection.appendChild(heroService);
-    });
+    //   heroSection.appendChild(heroService);
+    // });
     
   
-    // Add event listener for clicks on hero-section
-    heroSection.addEventListener("click", (event) => {
-      const clickedService = event.target.closest(".hero-services");
+    // // Add event listener for clicks on hero-section
+    // heroSection.addEventListener("click", (event) => {
+    //   const clickedService = event.target.closest(".hero-services");
   
-      if (clickedService) {
-        const serviceId = clickedService.dataset.id;
-        const service = servicesData.find((s) => s.id === serviceId);
+    //   if (clickedService) {
+    //     const serviceId = clickedService.dataset.id;
+    //     const service = servicesData.find((s) => s.id === serviceId);
   
-        if (service) {
-          localStorage.setItem("serviceContent", JSON.stringify(service)); // Save service data
-          window.location.href = "specificService.html"; // Redirect
-        }
-      }
-    });
+    //     if (service) {
+    //       localStorage.setItem("serviceContent", JSON.stringify(service)); // Save service data
+    //       window.location.href = "specificService.html"; // Redirect
+    //     }
+    //   }
+    // });
   
     // 2. Navigation Bar Handling
     const pageData = {
@@ -764,6 +773,55 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   
+    // specificServices
+    const heroSection = document.querySelector(".hero-section");
+    servicesData.forEach((service) => {
+      const heroService = document.createElement("div");
+      heroService.className = "hero-services";
+      heroService.dataset.id = service.id;
+    
+      let captions = `
+        ${service.captionHeading ? `<h3>${service.captionHeading}</h3>` : ""}
+        ${service.captionP1 ? `<p>${service.captionP1}</p>` : ""}
+        ${service.captionP2 ? `<p>${service.captionP2}</p>` : ""}
+        ${service.captionP3 ? `<p>${service.captionP3}</p>` : ""}
+        ${service.captionP4 ? `<p>${service.captionP4}</p>` : ""}
+      `;
+    
+      heroService.innerHTML = `
+        <div class="serviceTitle">
+          ${service.title}
+          <div class="hero-image">
+          <img src="${service.images[0]}" alt="${service.title}">
+          <div class="hero-description-overlay">
+            ${captions}
+          </div>  
+        </div>
+        </div>
+        <div class="hero-text">
+          <p>${service.description}</p>
+          <div class="visit-page-text">Visit Page</div>
+        </div>
+      `;
+    
+      heroSection.appendChild(heroService);
+    });
+    // Add event listener for clicks on hero-section
+    heroSection.addEventListener("click", (event) => {
+      const clickedService = event.target.closest(".hero-services");
+  
+      if (clickedService) {
+        const serviceId = clickedService.dataset.id;
+        const service = servicesData.find((s) => s.id === serviceId);
+  
+        if (service) {
+          localStorage.setItem("pageData", JSON.stringify(pageData)); // Save entire object
+          localStorage.setItem("serviceContent", JSON.stringify(service)); // Save service data
+          window.location.href = "specificService.html"; // Redirect
+        }
+      }
+    });
+
     // Handle click events for navigation links
     document.querySelectorAll("[data-page-key]").forEach((link) => {
       link.addEventListener("click", (event) => {

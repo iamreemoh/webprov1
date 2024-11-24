@@ -3,6 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Retrieve the service data from localStorage
     const serviceData = JSON.parse(localStorage.getItem("serviceContent"));
 
+    // Toggle navigation menu on click
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active'); // Toggle hamburger to X
+    });
+    
     // Check if the service data exists
     if (serviceData) {
         // Set the service title
