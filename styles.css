@@ -246,7 +246,7 @@ body {
     line-height: 1.8;
     transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition properties */
     overflow: hidden;
-    max-height: calc(1.9rem * 4 + 1rem); /* Initial max-height */
+    max-height: calc(1.9rem * 4 + 1rem); 
     opacity: 0.9; /* Slightly less opaque for a clean look */
 }
 

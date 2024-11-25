@@ -124,7 +124,7 @@ body {
     position: relative;
     perspective: 1000px; /* Enables 3D perspective */
     overflow: hidden;
-    height: 400px; /* Adjust as needed */
+    height: 60vh; /* Adjust as needed */
     display: flex;
     justify-content: center; /* Horizontally centers the image */
     align-items: center; /* Optionally, vertically centers the image if needed */
@@ -196,6 +196,7 @@ body {
 
 .tab-pane #questionanswer{
     font-weight: bold;
+    font-size: 1.4rem;
 }
 .tab-pane:first-child {
     display: block;
