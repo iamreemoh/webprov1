@@ -414,6 +414,8 @@ body {
       padding: 10px 0;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       z-index: 999;
+      border-bottom-left-radius: 40px; /* Bottom left corner */
+      border-bottom-right-radius: 40px; /* Bottom right corner */
     }
   
     .nav-links a {
@@ -433,6 +435,72 @@ body {
     .nav-links.active {
       display: flex;
     }
+
+    .footer {
+        padding: 20px;
+        background-color: #20232a; /* Keep the same background color */
+      }
+    
+      .fcontainer {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Add spacing between sections */
+        padding-top: 10px;
+      }
+    
+      /* Move footer-links to the top */
+      .footer-links {
+        order: 1; /* Set order to display first */
+        text-align: center; /* Center-align links for better appearance */
+        /* margin-bottom: 20px; */
+      }
+    
+      .footer-links nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+    
+      .footer-links nav ul li {
+        margin: 10px 0; /* Add spacing between links */
+      }
+    
+      .footer-links nav ul li a {
+        font-size: 1em;
+        color: #61dafb; /* Keep link color consistent */
+        text-decoration: none;
+      }
+    
+      .footer-links nav ul li a:hover {
+        text-decoration: underline;
+      }
+    
+      /* Align contact-info and contact-details */
+      .contact-info {
+        order: 2; /* Display below links */
+        text-align: left; /* Keep address left-aligned */
+        margin-bottom: 20px;
+      }
+    
+      .contact-details {
+        order: 3; /* Display below contact-info */
+        display: flex;
+        justify-content: center; /* Center the logo */
+      }
+    
+      .contact-details img {
+        max-width: 80%;
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+      /* Footer-bottom centered */
+      .footer-bottom {
+        order: 4; /* Display last */
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+      }
   }
   
   
