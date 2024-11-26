@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
         captionP4:"Erstellung von Energieausweisen",
         images: [
           "/images/HausMuetze1.jpg",
-          "/images/2-3-die Augenkurve-final.png",
+          "/images/sustainable_house1.png",
           "/images/2-8-histogram-blauer-Himmel.png",
           "/images/2-8-spectrum-blauer-Himmel.png",
           "/images/2-9-Farbsegel-Saettigung.png"
         ],
-        tabNames: ["Aktuelle Lage", "Energieberatung","DIY Rentabilität","QNG-Siegel","LCA-Analyse","Mythen & Technik"], // Names for tabs
+        tabNames: ["Aktuelle Lage", "Energieberatung","DIY Rentabilität","QNG-Siegel","LCA-Bilanzierung","Mythen & Technik"], // Names for tabs
         content: [
           // First tab (landing page content)
           [
