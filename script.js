@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         captionP4:"Erstellung von Energieausweisen",
         images: [
           "/images/HausMuetze1.jpg",
-          "/images/sustainable_house1.png",
+          "/images/ee_sanierung.svg",
           "/images/2-8-histogram-blauer-Himmel.png",
           "/images/2-8-spectrum-blauer-Himmel.png",
           "/images/2-9-Farbsegel-Saettigung.png"

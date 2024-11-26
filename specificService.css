@@ -37,15 +37,12 @@ body {
   top: 0;
 }
 
-/* Shrinking navbar */
-.navbar.navbar-shrink {
-  height: 60px; /* Reduced height */
-  padding: 5px 0; /* Adjust padding to match new height */
-}
-
 /* Navbar content adjustment */
-.navbar .logo {
-  font-size: 1.5rem; /* Ensure logo remains visible */
+.navbar .logo img {
+  display: block; /* Ensure it is displayed */
+  width: 200px; /* Allow intrinsic width */
+  height: auto; /* Allow intrinsic height */
+  max-width: 100%; /* Prevent oversizing */ 
 }
 
 .navbar .nav-links a {
