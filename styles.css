@@ -86,19 +86,21 @@ body {
 /* Full-Screen Section with Parallax Effect */
 .full-screen-section {
     position: relative;
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full screen width */
+    height: 100vh; 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
     overflow: hidden;
-    background-image: url('/iconsThumbs/hero-bike-scene.jpeg');
-    background-size: cover; /* Ensures the image covers the entire section */
+    background-image: url('/iconsThumbs/hero-bike-sceneBlurred.png');
+    background-size:cover ; /* Ensures the image covers the entire section */
     background-position: center;
-    background-attachment: fixed; /* Creates the parallax effect */
+    background-repeat: no-repeat;
+    background-attachment:fixed ; /* Creates the parallax effect */
     z-index: -1;
+    background-color: #000;
 }
 
 .full-screen-content {
@@ -246,7 +248,7 @@ body {
     line-height: 1.8;
     transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition properties */
     overflow: hidden;
-    max-height: calc(1.9rem * 4 + 1rem); 
+    /* max-height: calc(1.9rem * 4 + 1rem);  */
     opacity: 0.9; /* Slightly less opaque for a clean look */
 }
 
@@ -460,59 +462,69 @@ body {
             width: 60px; /* Adjust the size of the scroll GIF */
         }
     
-        /* Hero Section */
         .hero-section {
-            flex-direction: column; /* Stack the services vertically on mobile */
-            justify-content: center; /* Center the content */
-            padding: 1rem;
+            display: flex;
+            flex-direction: column; /* Stack tiles vertically */
+            gap: 1rem; /* Reduce the gap between tiles */
+            padding: 1rem; /* Adjust padding for smaller screens */
         }
-    
-        /* Individual Hero Services */
+        
+        .serviceTitle{
+            border-radius: 40px 40px 0px 0px;
+        }
         .hero-services {
-            width: 100%; /* Make each service take full width */
-            margin-bottom: 1rem; /* Space between tiles */
+            width: 100%; /* Take full width of the screen */
+            border-radius: 0; /* Remove border radius for a cleaner look */
+            box-shadow: none; /* Remove shadows for simplicity */
         }
     
-        /* Hero Image */
         .hero-image {
-            aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+            aspect-ratio: auto; /* Allow natural aspect ratio of the image */
+            border-radius: 0; /* Remove rounded corners */
+            width: 100%; /* Full width */
+            overflow: visible; /* Ensure visibility of the full image */
         }
     
-        /* Hero Text */
-        .hero-text {
-            padding: 1rem;
-            font-size: 1rem; /* Adjust text size for better readability */
-            line-height: 1.6; /* Slightly tighter line-height for better fit */
-            max-height: none; /* Disable max-height for mobile */
-            opacity: 1; /* Ensure the text is fully visible */
+        .hero-image img {
+            object-fit: cover; /* Ensure the image fills the area */
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px 5px 0 0;
         }
     
-        /* Hero Services Hover Effects */
-        .hero-services:hover {
-            box-shadow: none; /* Avoid hovering effect on mobile */
-            transform: none; /* Remove scaling on hover for mobile */
-        }
-    
-        /* Visit Page Text */
-        .visit-page-text {
-            font-size: 0.9rem; /* Smaller text size */
-            padding: 8px;
-        }
-    
-        /* Service Title */
-        .serviceTitle {
-            font-size: 1rem; /* Adjust font size for mobile */
-            padding: 8px;
-        }
-    
-        /* Hero Description Overlay */
         .hero-description-overlay {
-            font-size: 1rem; /* Adjust overlay text size */
-            padding: 0.8rem;
+            background:#ccc; /* Light grey background */
+            color: #222; /* Darker text for readability */
+            padding: 1rem;
+            text-align: center; /* Align text to the left for readability */
+            position: static; /* Make it part of the document flow */
+            width: 100%; /* Full width */
+            font-size: 0.9rem; /* Adjust font size for smaller screens */
         }
     
-        .hero-services:hover .hero-description-overlay {
-            background: rgba(0, 0, 0, 0.7); /* Darker overlay for hover */
+        .hero-text {
+            text-align: justify;
+            padding: 1rem;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem; /* Adjust font size for mobile */
+            color: #555;
+            line-height: 1.6; /* Adjust line height for readability */
+            opacity: 1; /* Fully visible */
+            max-height: none; /* Remove max-height restriction */
+            border: 1px solid #ccc; /* Thin border with a light grey color */
+            border-radius: 0 0 40px 40px; /* Rounded bottom corners */
+            background: #fff; /* Optional: Add a white background for contrast */
+        }        
+    
+        .visit-page-text {
+            margin-top: 1rem;
+            padding: 10px;
+            background-color: #357ab8; /* Blue background for buttons */
+            color: white;
+            font-size: 0.9rem; /* Adjust font size for mobile */
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 20px;
         }
 
     .footer {

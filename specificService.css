@@ -133,7 +133,7 @@ body {
 }
 
 #service-images img {
-    width: 70%; /* Adjust as needed */
+    width:60%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
 }
@@ -243,13 +243,14 @@ body {
 
 /* General Table Styling */
 .lighting-table {
-  width: 100%;
+  width: 800px;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 20px auto;
   background-color: #f9f9f9; /* Light background */
   color: #333; /* Dark text */
   font-family: Arial, sans-serif;
   font-size: 1rem;
+
 }
 
 /* Header Styling */

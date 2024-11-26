@@ -11,8 +11,16 @@ hamburger.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', function() {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
+  // Check if we are on mobile
+  if (window.innerWidth <= 768) {
+    const scrollPos = window.scrollY;
+    const section = document.querySelector('.full-screen-section'); 
+    // Move the background horizontally based on scroll position
+    section.style.backgroundPosition = `center ${50 + scrollPos * 0.1}%`; // Adjust multiplier for speed
+  }
+
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   if (currentScroll > lastScrollTop) {
     // User is scrolling down
     navbar.classList.add('scrolled');  // Add 'scrolled' class to move navbar to top
@@ -214,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               "<p>Wenn man von einer guten Beleuchtung spricht, sollten ihr Spektrum zumindest ansatzweise diese Konstanz erreichen. Das ist natürlich in erster Linie eine Frage der Kosten. Dennoch kann sich diese Investition im gewerblichen Umfeld schnell rentieren, wenn dadurch Produktionsprozesse schneller und in höherer Qualität durchgeführt werden können.</p>",
               "<p id='questionanswer'>Was ist die Lichttemperatur?</p>",
+              // "<h2>Was ist die Lichttemperatur?</h2>",
               "<p>Die Lichttemperatur ist eine physikalische Vergleichsgröße. Sie bezieht sich auf einen theoretischen, tief schwarzen Körper der keinerlei Umgebungslicht reflektieren kann. Wenn man diesen Körper erhitzt bis er glüht, dann   strahlt er durch sein Glühen wieder Licht ab und die Temperatur des Lichts entspricht genau der Temperatur des erhitzten Körpers. Wird dieser Körper z.B. auf eine Temperatur von 4000 Kelvin erhitzt, dann hat das Licht, das durch das Glühen entsteht dementsprechend einer Lichttemperatur von 4000 Kelvin.</p>",
               "<p>Auf dem abgebildeten Farbsegel, in dem alle Spektralfarben enthalten sind, verläuft  eine gebogene Linie über die jenigen Farben, die durch die Erhitzung dieses schwarzen Strahlers erzeugt werden können. Die angegebenen Temperaturen zeigen, welche Farben bei welchen Temperaturen abgestrahlt werden. Auch wenn das Licht bei niedrigeren Temperaturen rötlich wird und bei höheren Temperaturen bläulich, spricht man hier allgemein von weißem Licht.</p>",
               
@@ -490,56 +499,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
       }
     ];
-
-    // const heroSection = document.querySelector(".hero-section");
-
-    // servicesData.forEach((service) => {
-    //   const heroService = document.createElement("div");
-    //   heroService.className = "hero-services";
-    //   heroService.dataset.id = service.id;
-    
-    //   let captions = `
-    //     ${service.captionHeading ? `<h3>${service.captionHeading}</h3>` : ""}
-    //     ${service.captionP1 ? `<p>${service.captionP1}</p>` : ""}
-    //     ${service.captionP2 ? `<p>${service.captionP2}</p>` : ""}
-    //     ${service.captionP3 ? `<p>${service.captionP3}</p>` : ""}
-    //     ${service.captionP4 ? `<p>${service.captionP4}</p>` : ""}
-    //   `;
-    
-    //   heroService.innerHTML = `
-    //     <div class="serviceTitle">
-    //       ${service.title}
-    //       <div class="hero-image">
-    //       <img src="${service.images[0]}" alt="${service.title}">
-    //       <div class="hero-description-overlay">
-    //         ${captions}
-    //       </div>  
-    //     </div>
-    //     </div>
-    //     <div class="hero-text">
-    //       <p>${service.description}</p>
-    //       <div class="visit-page-text">Visit Page</div>
-    //     </div>
-    //   `;
-    
-    //   heroSection.appendChild(heroService);
-    // });
-    
-  
-    // // Add event listener for clicks on hero-section
-    // heroSection.addEventListener("click", (event) => {
-    //   const clickedService = event.target.closest(".hero-services");
-  
-    //   if (clickedService) {
-    //     const serviceId = clickedService.dataset.id;
-    //     const service = servicesData.find((s) => s.id === serviceId);
-  
-    //     if (service) {
-    //       localStorage.setItem("serviceContent", JSON.stringify(service)); // Save service data
-    //       window.location.href = "specificService.html"; // Redirect
-    //     }
-    //   }
-    // });
   
     // 2. Navigation Bar Handling
     const pageData = {
