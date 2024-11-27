@@ -555,6 +555,80 @@ ul.square-list {
       display: flex;
     }
 
+    .about-slider {
+      flex-direction: column; /* Stack slides vertically */
+      gap: 10px; /* Reduce gap */
+  }
+
+  .slide {
+      flex-direction: column; /* Stack content vertically */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .slide img {
+      max-width: 100%; /* Make image responsive */
+      margin-bottom: 10px; /* Add spacing below image */
+  }
+
+  .slide-content {
+      align-items: flex-start; /* Align content to the left */
+  }
+
+  .main-content {
+      padding: 20px; /* Reduce padding for smaller screens */
+      font-size: 14px; /* Adjust font size for readability */
+  }
+
+  .main-content h1,
+  .main-content h2 {
+      font-size: 18px; /* Adjust title size */
+  }
+
+  .form-group {
+      flex-direction: column; /* Stack label and input vertically */
+      align-items: flex-start; /* Align to the start */
+  }
+
+  .form-group label {
+      margin-bottom: 5px; /* Add spacing below label */
+  }
+
+  .form-group select {
+      width: 100%; /* Full-width dropdown */
+  }
+
+  .card {
+      padding: 15px; /* Adjust padding */
+      margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .card h3 {
+      font-size: 1.2rem; /* Reduce title size */
+  }
+
+  .cookie-table {
+      font-size: 0.9rem; /* Reduce font size for table */
+  }
+
+  .cookie-table th,
+  .cookie-table td {
+      padding: 8px; /* Adjust padding */
+  }
+
+  #button {
+      width: 100%; /* Full-width button */
+      padding: 12px; /* Adjust padding */
+      font-size: 1rem; /* Adjust font size */
+  }
+
+  ul.square-list {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  ul.square-list li {
+      margin-bottom: 15px; /* Reduce space between items */
+  }
+
     .footer {
       padding: 20px;
       background-color: #20232a; /* Keep the same background color */

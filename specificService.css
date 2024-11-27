@@ -515,7 +515,7 @@ body {
 
     /* Headings within tab content */
     .tab-content h2 {
-      font-size: 1.5rem; /* Slightly smaller heading font size */
+      font-size: 18px; /* Slightly smaller heading font size */
       margin-bottom: 0.5rem; /* Add spacing after headings */
       color: #333; /* Dark text for headings */
       text-align: center; /* Center-align headings */
@@ -523,7 +523,7 @@ body {
 
     /* Text paragraphs */
     .tab-content p {
-      font-size: 1rem; /* Smaller font for paragraphs */
+      font-size: 14px; /* Smaller font for paragraphs */
       color: #555; /* Subtle gray text color */
       line-height: 1.8; /* Ensure adequate spacing for readability */
       margin-bottom: 1rem; /* Add spacing between paragraphs */

@@ -196,6 +196,7 @@ body {
     text-align: center;
     font-weight: bold;
     border-radius: 8px;
+    text-transform: uppercase;
 }
 .serviceTitle:hover {
     background-color: #222;
