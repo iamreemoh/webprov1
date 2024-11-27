@@ -28,6 +28,7 @@ body {
     padding: 10px 0;
     z-index: 1000;
     transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    text-transform: uppercase;
 }
 
 /* Navbar after scrolling starts (moves to top) */

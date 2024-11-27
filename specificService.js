@@ -136,4 +136,87 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "info.html";
         });
     });
+
+    // For mobile
+    const tabsDiv = document.querySelector(".tabs"); // Tabs container
+    const dropdown = document.querySelector(".dropdown-menu"); // Dropdown menu
+    const tabContentDiv = document.querySelector(".tab-content"); // Tab content area
+    const serviceImagesDiv = document.getElementById("service-images"); // Image container
+    if (serviceData) {
+        // Populate dropdown options dynamically
+        if (tabsDiv) {
+        const tabButtons = tabsDiv.querySelectorAll(".tab");
+        tabButtons.forEach((tab, index) => {
+            const option = document.createElement("option");
+            option.value = index;
+            option.textContent = tab.textContent;
+            dropdown.appendChild(option);
+        });
+        }
+
+        // Function to update the displayed image
+        const displayImage = (imageIndex) => {
+        serviceImagesDiv.innerHTML = ""; // Clear the current image
+        if (serviceData.images.length > imageIndex) {
+            const tabImage = document.createElement("img");
+            tabImage.src = serviceData.images[imageIndex];
+            tabImage.alt = `Tab ${imageIndex + 1} Image`;
+
+            // Adjust image size based on aspect ratio
+            tabImage.onload = () => {
+            const isLandscape = tabImage.naturalWidth > tabImage.naturalHeight;
+            tabImage.style.width = isLandscape ? "60%" : "40%";
+            };
+
+            serviceImagesDiv.appendChild(tabImage);
+        }
+        };
+
+        // Add event listener for dropdown selection
+        dropdown.addEventListener("change", (e) => {
+        const selectedIndex = parseInt(e.target.value);
+
+        // Hide all tab content
+        document.querySelectorAll(".tab-pane").forEach((pane) => {
+            pane.style.display = "none";
+        });
+
+        // Show the selected tab content
+        const selectedContent = document.querySelector(`.tab-pane[data-index='${selectedIndex}']`);
+        if (selectedContent) {
+            selectedContent.style.display = "block";
+        }
+
+        // Update the image for the selected tab
+        displayImage(selectedIndex + 1); // Match image index to tab index
+        });
+
+        // Add event listeners for tab clicks (desktop mode)
+        tabsDiv?.addEventListener("click", (e) => {
+        if (e.target.classList.contains("tab")) {
+            const selectedIndex = parseInt(e.target.dataset.index);
+
+            // Update active tab
+            document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
+            e.target.classList.add("active");
+
+            // Hide all tab content
+            document.querySelectorAll(".tab-pane").forEach((pane) => {
+            pane.style.display = "none";
+            });
+
+            // Show the selected tab content
+            const selectedContent = document.querySelector(`.tab-pane[data-index='${selectedIndex}']`);
+            if (selectedContent) {
+            selectedContent.style.display = "block";
+            }
+
+            // Update the image for the selected tab
+            displayImage(selectedIndex + 1); // Match image index to tab index
+        }
+        });
+
+        // Trigger the first option's content and image on page load
+        dropdown.dispatchEvent(new Event("change"));
+    }
 });
