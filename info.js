@@ -8,10 +8,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // Toggle navigation menu on click
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+
+    // Function to close the navigation menu
+    function closeMenu() {
+        navLinks.classList.remove('active'); // Close the menu
+        hamburger.classList.remove('active'); // Reset the hamburger icon
+    }
+
     hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active'); // Toggle hamburger to X
     });
+
+    // Add event listener to close menu when a navigation link is clicked
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
+
 
     if (selectedPage && pageData && pageData[selectedPage]) {
         let contentHTML = `<h1>${pageData[selectedPage].title}</h1>`;

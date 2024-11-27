@@ -131,9 +131,9 @@ body {
 }
 
 #service-images img {
-    width:45%; /* Adjust as needed */
+    width:70%; 
     height: auto; /* Maintain aspect ratio */
-    max-height: 50vh; /* Limit height as well */
+    /* max-height: 45vh;  */
     transform: scale(0.8); /* Shrinks the image further */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
     object-fit: contain; /* Ensures image fits within specified boundaries */
@@ -491,6 +491,27 @@ body {
       border-color: #007BFF; /* Add a light blue border on hover */
     }
 
+    #service-images {
+      position: relative;
+      perspective: 1000px; /* Enables 3D perspective */
+      overflow: hidden;
+      height: 60vh; /* Adjust as needed */
+      display: flex;
+      justify-content: center; /* Horizontally centers the image */
+      align-items: center; /* Optionally, vertically centers the image if needed */
+      width:100%;
+      background-color: black;
+    }
+
+    #service-images img {
+      width:100%; 
+      height: auto; /* Maintain aspect ratio */
+      /* max-height: 60vh;  */
+      transform: scale(1.4); /* Shrinks the image further */
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
+      object-fit: contain; /* Ensures image fits within specified boundaries */
+    }
+
     /* Style tabs for desktop view */
     .tabs {
       display: none;
@@ -527,6 +548,13 @@ body {
       color: #555; /* Subtle gray text color */
       line-height: 1.8; /* Ensure adequate spacing for readability */
       margin-bottom: 1rem; /* Add spacing between paragraphs */
+    }
+
+    .tab-pane h2{
+      font-size: 18px;
+    }
+    .tab-pane #questionanswer{
+      font-size: 16px;
     }
 
     /* Images in tab content */

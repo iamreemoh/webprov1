@@ -581,9 +581,12 @@ ul.square-list {
 
   .main-content h1,
   .main-content h2 {
-      font-size: 18px; /* Adjust title size */
+      font-size: 16px; /* Adjust title size */
   }
 
+.main-content p{
+  font-size: 14px;
+}
   .form-group {
       flex-direction: column; /* Stack label and input vertically */
       align-items: flex-start; /* Align to the start */

@@ -49,8 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
           "/images/HausMuetze1.jpg",
           "/images/ee_sanierung.svg",
           "/images/2-8-histogram-blauer-Himmel.png",
-          "/images/2-8-spectrum-blauer-Himmel.png",
-          "/images/2-9-Farbsegel-Saettigung.png"
+          "/images/DIY.gif",
+          "/images/QNG-Siegel-WEB-Format.jpeg",
+          "/images/LCA-Bilanzierung-WEB-Format.jpeg",
+          "/images/Mythen-Technik-Web-Format.jpg"
         ],
         tabNames: ["Aktuelle Lage", "Energieberatung","DIY Rentabilität","QNG-Siegel","LCA-Bilanzierung","Mythen & Technik"], // Names for tabs
         content: [
