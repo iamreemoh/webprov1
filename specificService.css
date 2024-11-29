@@ -210,42 +210,25 @@ body {
 
 /* General styling for all images */
 .tab-content img {
-  display: block;
-  margin: 15px auto;
+  display: inline-block; /* Default behavior */
+  margin: 5px; /* Add some spacing around each image */
+  max-width: 100%; /* Prevent images from exceeding container width */
   height: auto; /* Maintain aspect ratio */
 }
 
 /* Landscape images (70% of viewport width) */
 .tab-content img[alt="landscape"] {
   width: 70vw;
+  max-width: 1500px;
 }
 
 /* Square images (default to 30% of viewport width for consistency) */
 .tab-content img[alt="square"] {
   width: 40vw;
   max-width: 300px;
-  margin: 10px; /* Add spacing around images */
-}
+  margin: 20px 5vw;
+} 
 
-/* Full-width table images */
-.tab-content img[alt="table"] {
-  width: 100vw;
-  max-width: 100%;
-}
-
-/* Flex container for images */
-.tab-content .flex-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: center; /* Center align images */
-  gap: 10px; /* Add spacing between items */
-}
-
-/* Place square images side-by-side when there's enough space */
-.tab-content .flex-container img[alt="square"] {
-  flex: 1 1 30%; /* Allow resizing and alignment */
-  max-width: 300px; /* Ensure consistent sizing */
-}
 
 /* General Table Styling */
 .lighting-table {
@@ -376,6 +359,12 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
     /* Navbar */
     .navbar {
       height: 60px; /* Adjusted height */
@@ -440,8 +429,8 @@ body {
       padding: 10px 0;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       z-index: 999;
-      border-bottom-left-radius: 40px; /* Bottom left corner */
-      border-bottom-right-radius: 40px; /* Bottom right corner */
+      border-bottom-left-radius: 10px; /* Bottom left corner */
+      border-bottom-right-radius: 10px; /* Bottom right corner */
     }
   
     .nav-links a {
@@ -559,18 +548,17 @@ body {
 
     /* Images in tab content */
     .tab-content img {
-      display: block;
-      margin: 1rem auto; /* Center images */
-      max-width: 100%; /* Ensure images don't overflow */
+      width: 80%;
+      display: block; /* Stack images vertically */
+      margin: 10px auto; /* Center align with spacing */
+      max-width: 90%; /* Scale down for mobile, allowing some padding from edges */
       height: auto; /* Maintain aspect ratio */
-      border-radius: 5px; /* Optional: rounded corners for images */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
-    }
+  }
 
     /* Table styling for mobile */
     .lighting-table {
       width: 100%; /* Ensure table fits within screen */
-      font-size: 0.9rem; /* Slightly smaller font for tables */
+      font-size: 8px; /* Slightly smaller font for tables */
       border-collapse: collapse;
       overflow-x: auto; /* Add horizontal scrolling for large tables */
     }
