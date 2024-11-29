@@ -214,22 +214,40 @@ body {
   margin: 5px; /* Add some spacing around each image */
   max-width: 100%; /* Prevent images from exceeding container width */
   height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Fine border for a clean look */
+  border-radius: 4px; /* Slight rounding for aesthetics */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Landscape images (70% of viewport width) */
+/* Shadow effect on hover */
+.tab-content img:hover {
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+  transform: scale(1.01); /* Slight zoom-in effect */
+  border-color: rgba(0, 0, 0, 0.4); /* Slightly darker border on hover */
+}
+
+/* Landscape images */
 .tab-content img[alt="landscape"] {
   width: 70vw;
   max-width: 1500px;
 }
 
-/* Square images (default to 30% of viewport width for consistency) */
+/* Square images */
 .tab-content img[alt="square"] {
   width: 40vw;
   max-width: 300px;
   margin: 20px 5vw;
-} 
+}
 
+.table-greenrow{
+  background-color: rgb(156, 216, 186);
+}
 
+/* .table-redrow{
+  background-color: rgb(235, 159, 159);
+} */
 /* General Table Styling */
 .lighting-table {
   width: 800px;

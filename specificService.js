@@ -219,4 +219,48 @@ document.addEventListener("DOMContentLoaded", () => {
         // Trigger the first option's content and image on page load
         dropdown.dispatchEvent(new Event("change"));
     }
+
+    // Select all images and the body element
+    const images = document.querySelectorAll('.tab-content img');
+    const body = document.body;
+
+    // Create the lightbox container dynamically
+    const lightbox = document.createElement('div');
+    lightbox.style.position = 'fixed';
+    lightbox.style.top = '0';
+    lightbox.style.left = '0';
+    lightbox.style.width = '100vw';
+    lightbox.style.height = '100vh';
+    lightbox.style.background = 'rgba(0, 0, 0, 0.8)';
+    lightbox.style.display = 'none'; // Initially hidden
+    lightbox.style.justifyContent = 'center';
+    lightbox.style.alignItems = 'center';
+    lightbox.style.zIndex = '1000';
+    lightbox.style.backdropFilter = 'blur(10px)';
+    body.appendChild(lightbox);
+
+    // Create the image element for the lightbox
+    const lightboxImg = document.createElement('img');
+    lightboxImg.style.maxWidth = '90%';
+    lightboxImg.style.maxHeight = '90%';
+    lightboxImg.style.border = '5px solid white';
+    lightboxImg.style.borderRadius = '10px';
+    lightboxImg.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.5)';
+    lightbox.appendChild(lightboxImg);
+
+    // Show the lightbox when an image is clicked
+    images.forEach(image => {
+    image.addEventListener('click', () => {
+        lightbox.style.display = 'flex'; // Display the lightbox
+        lightboxImg.src = image.src; // Set the lightbox image source
+        body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+    });
+
+    // Hide the lightbox when clicking outside the image
+    lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none'; // Hide the lightbox
+    body.style.overflow = ''; // Restore scrolling
+    });
+
 });

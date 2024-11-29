@@ -109,14 +109,112 @@ document.addEventListener("DOMContentLoaded", () => {
             "<p id='questionanswer'>Was ist das QNG Siegel?</p>",
             "<p>Das Qualitätssiegel Nachhaltiges Bauen ist ein Werkzeug zur Lenkung der Gebäudeerstellung und -sanierung hin zu einem zukunftsorientierten Immobilienbestand in Deutschland. Vorangetrieben wird dieses Ziel dadurch, dass bereits heute eine große Zahl an Förderprogrammen und Kreditvarianten an die Zertifizierung gebunden ist.</p>",
             "<p>Der Ausgangspunkt für das QNG Siegel ist eine Energie-Effizienz des Gebäudes, wie sie bei einem Neubau gefordert wird. Dazu kommen je nach Nutzung als Wohn- oder Nichtwohngebäude noch weitere Forderungen:</p>",
-            "<p></p>",
+            `<table class="lighting-table">
+              <thead>
+                <tr>
+                  <th>Anforderung</th>
+                  <th>Wohngebäude</th>
+                  <th>Nichtwohngebäude</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-greenrow">
+                  <td>LCA Bilanzierung (Lebenszyklus Analyse)</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Nachhaltige Materialgewinnung</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Schadstoffvermeidung in Baumaterialien</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Barrierefreiheit</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Bewertung der Naturgefahren am Standort</td>
+                  <td></td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Dachbegrünung</td>
+                  <td></td>
+                  <td>x</td>
+                </tr>
+              </tbody>
+            </table>
+            `,
             "<p id='questionanswer'>Wer darf das QNG Siegel vergeben?</p>",
             "<p>Während die Lebenszyklusanalyse (LCA) von einem dafür zertifizierten Energie-Effizienz-Experten durchgeführt werden kann, darf das QNG Siegel und damit die Überprüfung der nachfolgenden fünf Anforderungen nur von einer der vier in Deutschland zugelassenen Zertifizierungsstellen vergeben werden. Diese sind:</p>",
-            "<p></p>",
+            `<table class="lighting-table">
+              <thead>
+                <tr>
+                  <th>Zertifizierungsstelle</th>
+                  <th>Wohngebäude</th>
+                  <th>Nichtwohngebäude</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>DGNB GmbH</strong><br>
+                    Deutsche Gesellschaft für Nachhaltiges Bauen
+                  </td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>NaWoh</strong><br>
+                    Verein zur Förderung der Nachhaltigkeit im Wohnungsbau e. V.
+                  </td>
+                  <td>x</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>BIRN</strong><br>
+                    Bau-Institut für ressourceneffizientes und nachhaltiges Bauen GmbH
+                  </td>
+                  <td>x</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>STI</strong><br>
+                    Steinbeis-Transfer-Institut Bau- und Immobilienwirtschaft
+                  </td>
+                  <td>---</td>
+                  <td>x</td>
+                </tr>
+              </tbody>
+            </table>
+            `,
             "<p>Wichtig  zu wissen ist, dass jede der vier Zertifizierungsstellen eigene Vorgaben für die fünf durch sie zu prüfenden Anforderungen entwickelt hat. Die Siegel der Zertifizierungsstellen sind demnach nicht gleichwertig, auch wenn sie bei der Vergabe von Förderungen und Krediten so behandelt werden.</p>",
             "<p id='questionanswer'>Welche Arten von QNG Siegeln gibt es?</p>",
             "<p>Alle vier Zertifizierungsstellen unterscheiden  zwei verschiedenen Varianten des QNG Siegels, das Siegel Plus und das Siegel Premium. Bei beiden Varianten wird zu jeder Anforderung ein Prozentsatz angegeben, zu dem sie erfüllt werden muss. Dabei liegen die Prozentpunkte beim  QNG Premium Siegel höher.</p>",
-            "<p></p>",
+            `<table class="lighting-table">
+              <thead>
+                <tr>
+                  <th>QNG PLUS</th>
+                  <th>überdurchschnittlicher Anspruch</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>QNG PREMIUM</td>
+                  <td>gehobener Anspruch</td>
+                </tr>
+              </tbody>
+            </table>
+            `,
             "<p id='questionanswer'>Welche Aufgabe hat der Energie-Effizienz-Experte?</p>",
             "<p>Der Energie-Effizienz-Experte führt die Energieberechnung und die LCA Bilanzierung durch. Daneben verwaltet er alle eingehenden Nachweise und Zertifikate der Bauausführung. Diese Sammlung, sowie die zusätzlich vorgeschriebene Baustellenbegehung bedeutet einen erheblichen Zeitaufwand, der in der Regel auf Stundenbasis in Rechnung gestellt wird.</p>",
             "<p id='questionanswer'>Wie lange ist das QNG Siegel gültig?</p>",
@@ -131,7 +229,21 @@ document.addEventListener("DOMContentLoaded", () => {
               "<p>Bei der Beschreibung von Förderungen und Krediten findet sich oft die Bezeichnungen Treibhausgasemissionen nach Vorgaben des QNG Siegels oder klimafreundliches Gebäude. Dahinter verbirgt sich nichts anderes als die LCA Bilanzierung. Es ist also nicht nötig ein QNG Siegel zu beantragen, um  die entsprechende Förderung oder den entsprechenden Kredit zu bekommen. Natürlich gibt es Unterschiede bei der Förderung, aber diese beziehen sich oft nur auf die maximale Höhe des Kredits. An dieser Stelle muss sehr genau abgewogen werden, ob sich der finanzielle Mehraufwand für das QNG Siegel wirklich lohnt.</p>",
               "<p id='questionanswer'>Was wird bei der LCA Bilanzierung berechnet?</p>",
               "<p>Für die Lebenszyklus-Bewertung eines Gebäudes kommen zwei neue Einheiten ins Spiel. Dabei handelt es sich um den Beitrag zum Treibhauseffekt, Global Warming Potential (GWP) und den Anteil nicht-erneuerbarer Primärenergie, Primary Energy Non Renewable Total (PENRT). Gemessen werden diese Werte in:</p>",
-              "<p></p>",
+              `<table class="lighting-table">
+                <thead>
+                  <tr>
+                    <th>GWP_100</th>
+                    <th>kg CO2 Äquivalent / m² und Jahr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PENRT</td>
+                    <td>kWh / m² und Jahr</td>
+                  </tr>
+                </tbody>
+              </table>
+              `,
               "<p>Etwas irreführend ist die Bezeichnung GWP100. Dieser Wert bezieht sich auf 100 Jahre. Für die LCA Bilanz werden bei einem Gebäude aber tatsächlich nur 50 Jahre betrachtet.</p>",
               "<p id='questionanswer'>Wie hoch dürfen GWP und PENRT werden?</p>",
               "<p>Der zulässige Wert hängt von der Nutzung des Gebäudes ab. Bei Wohngebäuden gelten feste Werte pro Nettoraumfläche und Jahr. Die Grenzwerte bei Nichtwohngebäuden werden erst an Hand der Art der Nutzung und der jeweils dafür benötigten Fläche durch ihren Energie-Effizienz-Experten berechnet.</p>",
