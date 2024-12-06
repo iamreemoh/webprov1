@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         captionP4:"Erstellung von Energieausweisen",
         images: [
           "/images/HausMuetze1.jpg",
-          "/images/ee_sanierung.svg",
+          "/images/Aktuelles-WEB-Format.jpeg",
           "/images/2-8-histogram-blauer-Himmel.png",
           "/images/DIY.gif",
           "/images/QNG-Siegel-WEB-Format.jpeg",
@@ -267,8 +267,8 @@ document.addEventListener("DOMContentLoaded", () => {
               "<p>Diese Geschichten gehen überall um und treffen auch genauso häufig auf empfängnisbereite Verschwörungstheoretiker, die sie gerne weiter erzählen. Was steckt also dahinter?</p>",
               "<p>Luft kann umso mehr Flüssigkeit halten, je wärmer sie ist. Kühlt die Luft ab, dann verliert sie ihre Tragfähigkeit und das Wasser fällt in Form von Tropfen aus. Das ist kurz gesagt die Entstehung von Regen.</p>",
               "<p>Der gleiche Vorgang der Kondensation kann auch innerhalb der Hauswand auftreten. Da der Innenraum in der kalten Jahreszeit wärmer ist als die Außenluft, kommt es zu einem Temperaturgefälle innerhalb der Wand. Dringt Feuchtigkeit von innen nach außen,  dann besteht die Möglichkeit, dass sie so weit abkühlt, bis Kondenswasser ausfällt. Bildlich gesprochen regnet es in der Wand. Dieser Vorgang erfolgt vorzugsweise an Übergängen zwischen stark unterschiedlichen Materialien wie zum Beispiel Stein, Putz und Polystyrol, also im besagten Fall direkt an der Wärmedämmung.  Ein deratiger Tauwassereintrag begünstigt natürlich die Schimmelbildung.</p>",
-              "<p></p>",
-              "<p></p>",
+              "<img src='/iconsThumbs/Ziegelwand-240-EPS-35-160.png'/>",
+              "<img src='/iconsThumbs/Ziegelwand-240-EPS-45-40.png'/>",
               "<p>Betrachtet man jedoch die Simulation einer 24 cm dicken Außenwand aus Hohllochziegeln, mit einer Dämmung aus nur 4 cm starkem Polystyrol, wie sie zu Beginn der Wärmedämmung in den 70-er Jahren verwendet wurde, dann zeigt sich selbst hier kein Kondenswasserausfall. Auf der Außenseite steigt die Feuchtigkeit an, erreicht aber niemals den Taupunkt, also 100 %.</p>",
               "<p>In der zweiten Simulation, bei der die Dämmstoffdicke auf 16 cm erhöht wurde, wie es heute üblich ist, liegt die Kurve der relativen Luftfeuchtigkeit noch einmal tiefer. Es gibt also keine Möglichkeit, dass sich Kondenswasser zwischen Mauerwerk und Dämmung bilden kann.</p>",
               "<p>Kurz gesagt, alle Geschichten über Schimmelbildung zwischen Hauswand und Wärmedämmsystem müssen andere Ursachen haben. Möglicherweise wurde der Dachüberstand nicht der neuen Wandstärke angepasst oder es lagen andere Verarbeitungsfehler vor, die zu Regenwassereintrag geführt haben. Auf diese Weise kann es dann zur Hinterfeuchtung der Dämmung und zur Schimmelbildung gekommen sein.</p>",
@@ -285,9 +285,32 @@ document.addEventListener("DOMContentLoaded", () => {
               "<p>Welchen Effekt hat die automatische Lüftung auf den Wohnkomfort? Jeder kennt das angenehme Gefühl, wenn durch die Fensterlüftung frische Luft ins Zimmer strömt. Dieses Gefühl entsteht aber nicht in erster Linie, weil die frische Luft so gut ist, sondern weil die Raumluft so verbraucht war. Mit einer automatischen Lüftung kommt es erst gar nicht zu abgestandener Raumluft. Die permanente Ventilation sorgt immer für ein gutes Raumklima. Das ist besonders wichtig, wenn sie gerne bei geschlossenem Fenster schlafen, oder wegen zu großem Straßenlärm mit geschlossenem Fenster schlafen müssen. Durch die automatische Lüftung wird die Luft im Schlafzimmer am Morgen genauso gut sein wie am Abend zuvor.</p>",
               "<p id='questionanswer'>Mein Handwerker sagt: „das bringt nichts“</p>",
               "<p>Natürlich haben Handwerker oft eine große Berufserfahrung, aber in vielen Fällen kann ihnen sogar ihr Energie-Effizienz-Experte nicht genau sagen, in welche Richtung das Ergebnis der Berechnungen tendieren wird. Nicht selten gibt es große Überraschungen, weil ein weniger beachtetes Wärme-Leck wie eine schlecht gedämmte Bodenplatte oder eine Wand, die nur von innen gedämmt werden kann, ein großes Loch in die Energiebilanz reißt. Erst wenn der Energieverbrauch mit allen Parametern über den gesamten Jahresverlauf simuliert wurde, ist ein wirklich verlässliches Ergebnis zu erwarten.</p>",
-              "<p>Das Heizungsgesetz zwingt mich eine neue Heizung zu kaufen!</p>",
-              "<p id='questionanswer'>Diese Aussage ist in den meisten Fällen grober Unfug. Der Heizkessel muss nur ersetzt werden wenn er 30 Jahre und älter ist und dazu alle folgenden Aussagen erfüllt sind:</p>",
-              "<p></p>",
+              "<p id='questionanswer'>Das Heizungsgesetz zwingt mich eine neue Heizung zu kaufen!</h2>",
+              "<p>Diese Aussage ist in den meisten Fällen grober Unfug. Der Heizkessel muss nur ersetzt werden wenn er 30 Jahre und älter ist und dazu alle folgenden Aussagen erfüllt sind:</p>",
+              `<table class="lighting-table">
+                <thead>
+                  <tr>
+                    <td>Sie sind erst nach dem 01.02.2002 Eigentümer geworden,<br>
+                        oder sie bewohnen die Immobilie nicht selbst,<br>
+                        oder die Immobilie besteht aus mehr als 2 Wohnungen.</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>und der Kessel wird mit Gas oder Öl beheizt</td>
+                  </tr>
+                  <tr>
+                    <td>und handelt sich um einen alten Konstant-Temperatur-Kessel</td>
+                  </tr>
+                  <tr>
+                    <td>und die Heizungsanlage hat zwischen 4 kW und 400 kW</td>
+                  </tr>
+                  <tr>
+                    <td>und der Aufwand ist wirtschaftlich vertretbar!</td>
+                  </tr>
+                </tbody>
+              </table>
+              `,
               "<p>Alleine die erste Aussage schließt schon viele Immobilien aus. Wenn sie zum Beispiel ein Einfamilienhaus besitzen, das sie selbst bewohnen, und bereits vor dem 01.02.2002 der Eigentümer waren, sind sie schon aus dem Rennen. Es sei denn ihr Kaminkehrer sagt ihnen, dass die Anlage zu viele Schadstoffe ausstößt - aber das ist eine andere Geschichte.</p>",
               "<p>Gleichzeitig muss der Kessel mit fossilen Brennstoffen beheizt werden, ein veraltete Konstant-Temperatur-Kessel sein und im Bereich zwischen 4 kW und 400 kW liegen.</p>",
               "<p>Aber selbst wenn alle   vier technischen Aussagen erfüllt sind, muss der Austausch wirtschaftlich vertretbar sein. Was bedeutet das in der Praxis?</p>",
@@ -306,12 +329,12 @@ document.addEventListener("DOMContentLoaded", () => {
         captionP4:"Schulung zu Lichtparametern",
         images: [
           "/images/Pilze-600.jpg",
-          "/images/3-1-Gluehlampe-histogram.png",
-          "/images/3-1-Gluehlampe-spectrum.png",
-          "/images/3-2-Leuchtstoff-histogram.png",
+          "/images/2-3-die Augenkurve-final.png",
           "/images/3-2-Leuchtstoff-spectrum.png",
-          "/images/3-3-LED-1-kalt-spectrum.png",
-          "/images/3-4-LED-2-kalt-spectrum.png",
+          "/images/3-3-LED-1-warm-spectrum.png",
+          "/images/3-5-LED-1-warm-neutral-spectrum.png",
+          "/images/ic-p4m-02-min.gif",
+          "/images/6-2-Restwelligkeit.png",
           "/images/3-4-LED-2-neutral-spectrum.png",
           "/images/3-4-LED-2-warm-spectrum.png",
           "/images/3-5-LED-1-warm-neutral-Farbsegel.png",

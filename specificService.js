@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                             // Apply rotation and depth based on scroll offset
                             tabImage.style.transform = `
-                                rotateX(${scrollOffset * 15}deg) 
-                                rotateY(${scrollOffset * 15}deg) 
-                                translateZ(${scrollOffset * 50}px)
+                                rotateX(${scrollOffset * 10}deg) 
+                                rotateY(${scrollOffset * 10}deg) 
+                                translateZ(${scrollOffset * 40}px)
                             `;
                         } else {
                             // Reset to original state when out of view
@@ -155,22 +155,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Function to update the displayed image
-        const displayImage = (imageIndex) => {
-        serviceImagesDiv.innerHTML = ""; // Clear the current image
-        if (serviceData.images.length > imageIndex) {
-            const tabImage = document.createElement("img");
-            tabImage.src = serviceData.images[imageIndex];
-            tabImage.alt = `Tab ${imageIndex + 1} Image`;
+        // const displayImage = (imageIndex) => {
+        // serviceImagesDiv.innerHTML = ""; // Clear the current image
+        // if (serviceData.images.length > imageIndex) {
+        //     const tabImage = document.createElement("img");
+        //     tabImage.src = serviceData.images[imageIndex];
+        //     tabImage.alt = `Tab ${imageIndex + 1} Image`;
 
-            // Adjust image size based on aspect ratio
-            tabImage.onload = () => {
-            const isLandscape = tabImage.naturalWidth > tabImage.naturalHeight;
-            tabImage.style.width = isLandscape ? "60%" : "40%";
-            };
+        //     // Adjust image size based on aspect ratio
+        //     tabImage.onload = () => {
+        //     const isLandscape = tabImage.naturalWidth > tabImage.naturalHeight;
+        //     tabImage.style.width = isLandscape ? "60%" : "40%";
+        //     };
 
-            serviceImagesDiv.appendChild(tabImage);
-        }
-        };
+        //     serviceImagesDiv.appendChild(tabImage);
+        // }
+        // };
 
         // Add event listener for dropdown selection
         dropdown.addEventListener("change", (e) => {

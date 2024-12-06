@@ -90,7 +90,7 @@ body {
 /* Full-Screen Section with Parallax Effect */
 .full-screen-section {
     position: relative;
-    height: 100vh; 
+    height: calc(100vh - 80px); 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -98,16 +98,18 @@ body {
     color: white;
     text-align: center;
     overflow: hidden;
-    background-image: url('/iconsThumbs/hero-bike-sceneBlurred.png');
+    background-image: url('/iconsThumbs/hero-bike-scene.jpeg');
     background-size:cover ; /* Ensures the image covers the entire section */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment:fixed ; /* Creates the parallax effect */
+    background-position: center calc(100% - 80px); /* Offsets 80px from the bottom */
     z-index: -1;
     background-color: #000;
 }
 
 .full-screen-content {
+    /* height: calc(100vh - 80px); */
     z-index: 1; /* Ensures content stays above the background */
     text-align: center;
     color: #111;
@@ -117,9 +119,11 @@ body {
 }
 
 .full-screen-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
+    color:rgb(7, 63, 35)
 }
+
 
 .full-screen-content p {
     font-size: 1.2rem;

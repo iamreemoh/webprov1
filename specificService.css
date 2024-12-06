@@ -125,18 +125,18 @@ body {
     height: 60vh; /* Adjust as needed */
     display: flex;
     justify-content: center; /* Horizontally centers the image */
-    align-items: center; /* Optionally, vertically centers the image if needed */
-    width:100%;
+    align-items: center; /* Vertically centers the image */
+    width: 100%;
     background-color: black;
 }
 
 #service-images img {
-    width:70%; 
-    height: auto; /* Maintain aspect ratio */
-    /* max-height: 45vh;  */
-    transform: scale(0.8); /* Shrinks the image further */
+    max-height: 100%; /* Ensures the image respects the height of #service-images */
+    height: 100%; /* Fills the height of the container */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible */
+    transform: scale(0.8); /* Shrinks the image slightly */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
-    object-fit: contain; /* Ensures image fits within specified boundaries */
 }
   
 .dropdown-menu {
@@ -178,6 +178,7 @@ body {
     outline: none;
     transition: background 0.3s;
     text-transform: uppercase;
+    
 }
 
 .tab.active {
@@ -194,6 +195,7 @@ body {
 .tab-content {
     border-radius: 5px;
     background: #fff;
+    text-align: center;
 }
 
 .tab-pane {
@@ -228,18 +230,17 @@ body {
   border-color: rgba(0, 0, 0, 0.4); /* Slightly darker border on hover */
 }
 
-/* Landscape images */
 .tab-content img[alt="landscape"] {
-  width: 70vw;
-  max-width: 1500px;
+  max-width: 45%; /* Adjust width for landscape images */
+  display: inline-block; 
+  margin: 2% 7%;
 }
 
-/* Square images */
-.tab-content img[alt="square"] {
-  width: 40vw;
-  max-width: 300px;
-  margin: 20px 5vw;
-}
+  .tab-content img[alt="square"] {
+    display: inline-block; 
+    margin: 2% 7%;
+    max-width: 30%; /* Adjust width for square images */
+  }
 
 .table-greenrow{
   background-color: rgb(156, 216, 186);
@@ -502,22 +503,22 @@ body {
       position: relative;
       perspective: 1000px; /* Enables 3D perspective */
       overflow: hidden;
-      height: 60vh; /* Adjust as needed */
       display: flex;
       justify-content: center; /* Horizontally centers the image */
-      align-items: center; /* Optionally, vertically centers the image if needed */
-      width:100%;
+      align-items: center; /* Vertically centers the image */
+      width: 100%;
+      height: 60vh; 
       background-color: black;
     }
-
+    
     #service-images img {
-      width:100%; 
-      height: auto; /* Maintain aspect ratio */
-      /* max-height: 60vh;  */
+      height: 100%; /* Restrict the image height */
+      width: auto; /* Maintain aspect ratio */
       transform: scale(1.4); /* Shrinks the image further */
       transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
-      object-fit: contain; /* Ensures image fits within specified boundaries */
+      /* object-fit: contain; */
     }
+    
 
     /* Style tabs for desktop view */
     .tabs {
