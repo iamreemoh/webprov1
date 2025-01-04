@@ -163,17 +163,26 @@ document.addEventListener("DOMContentLoaded", () => {
             // Collect form data
             const formData = new FormData(form);
 
-            // Process checkbox values
-            const interests = formData.getAll("interest[]"); // Collect all selected checkboxes
+            // Manually collect values of the dynamically created checkboxes
+            const checkboxes = document.querySelectorAll("input[name='interests[]']:checked");
+            const interests = Array.from(checkboxes).map((checkbox) => checkbox.value);
             const interestsString = interests.join(", "); // Combine into a single string
 
-            // Append combined interests to form data
-            formData.append("interests", interestsString);
 
+            // Append combined interests to form data
+            // formData.append("interests", interestsString);
+
+            const tempString = [];
             // Log to ensure correct data structure
             for (const [key, value] of formData.entries()) {
                 console.log(`${key}: ${value}`);
+                if(key === 'interests[]'){
+                    tempString.push(value);
+                } 
             }
+
+            const joinOperation = tempString.join(", ");
+            formData.append("Multiplei", joinOperation);    
 
             // Send the form data using EmailJS
             emailjs

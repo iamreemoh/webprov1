@@ -170,13 +170,13 @@ html, body {
 /* Title Styles */
 .main-content h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #004d40;
 }
 
 .main-content h2 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #004d40;
 }
 
@@ -186,35 +186,39 @@ html, body {
 }
 
 .card {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    margin-bottom: 8px;
-    color: #666;
-  }
-  
-  .card a {
-    text-decoration: none;
-    color: #0066cc;
-    transition: color 0.3s ease;
-  }
-  
-  .card a:hover {
-    color: #004999;
-  }
-  
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.4; /* Use a relative value instead of fixed px */
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.3; /* Consistent with overall spacing */
+}
+
+.card p {
+  font-size: 1rem;
+  /* margin-bottom: 5px; */
+  color: #666;
+  line-height: 1.4; /* Relative value for readability */
+}
+
+.card a {
+  text-decoration: none;
+  color: #0066cc;
+  transition: color 0.3s ease;
+  line-height: 1.4; /* Match with text elements */
+}
+
+.card a:hover {
+  color: #004999;
+}
+
 /* Form Card */
 .form-card {
     background-color: #fff;

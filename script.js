@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         images: [
           "/images/HausMuetze1.jpg",
           "/images/Aktuelles-WEB-Format.jpeg",
-          "/images/2-8-histogram-blauer-Himmel.png",
+          "/images/Energieberatung-1-WEB-Format.jpeg",
           "/images/DIY.gif",
           "/images/QNG-Siegel-WEB-Format.jpeg",
           "/images/LCA-Bilanzierung-WEB-Format.jpeg",
@@ -76,18 +76,21 @@ document.addEventListener("DOMContentLoaded", () => {
               "<h2>Die Energieberatung gliedert sich in drei Schritte:</h2>",
               "<p id='questionanswer'>1. Die Betrachtung des Gebäudes in seiner Gesamtheit</p>",
               "<p>Möglicherweise haben sie schon einmal einen Anruf erhalten, bei dem ihnen neue Fenster in einer phantastischen Qualität mit Dreischichtverglasung angeboten worden sind. Wären diese für ihr Haus geeignet gewesen? Oder sie sind in eine Diskussion geraten, bei der sich zwei Hausbesitzer darüber gestritten haben, ob die Schichtdicke der Dämmung 20cm sein muss oder ob nicht auch 16cm genügen. Wer hatte Recht?</p>",
+              "<img src='/images/Energieberatung-2-WEB-Format.jpeg' alt='sideImage'/>",
               "<p>Diese Frage kann ihnen niemand allgemeingültig beantworten. Das hängt  tatsächlich von ihrem Gebäude ab. Was tut ein Energie-Effizienz-Experte in diesem Fall? Er lässt sich von ihnen die Pläne geben oder nimmt selbst Maß und bildet ihr gesamtes Gebäude in einem virtuellen Modell nach. Anschließend wird der Wärmedurchgang der Bauteile der wärmedämmenden Hülle berechnet und in das Modell eingefügt. Bei Nichtwohngebäuden kommt  zusätzlich die Definition der unterschiedlichen Bereiche, der sogenannten Zonen dazu.</p>",
               "<p>Das Ergebnis ist eine Abbildung ihres Gebäudes in seiner Gesamtheit. Mit diesem Modell ist es überhaupt erst möglich, die Wirkung neuer Fenster zu ermitteln oder die benötigte Schichtdicke der Dämmung zu berechnen.</p>",
               "<p>Nachdem die Betrachtung der Gebäudehülle abgeschlossen ist, erfolgt die Aufnahme der Anlagentechnik. Dazu gehört alles, was sie benötigen, um den Wärmeverlust durch die Hülle des Gebäudes wieder auszugleichen, kurz gesagt die Heizung. Hier spielt es eine Rolle,  womit sie heizen, wie effektiv ihre Heizung arbeitet und wie viel Strom sie zur Steuerung benötigt. Positiv wirkt es sich dabei aus, wenn sie Sonnenkollektoren auf dem Dach haben, oder vielleicht  schon eine Solaranlage. Bei Nichtwohngebäuden wird zusätzlich der Lichteinfall von außen und bilanziert und berechnet wie viel elektrische Energie für die Beleuchtung notwendig ist um die gesetzlich vorgeschriebene Helligkeit am Arbeitsplatz zu gewährleisten.</p>",
               "<p>Aus diesem Gesamtmodell, nennen wir es die Patientenakte ihres Gebäudes, ermittelt ihr Energie-Effizienz-Experte nun den Primärenergieverbrauch ihres Hauses. Das ist die Energie, die ihrem Gebäude letztenendes zugeführt werden muss, um die Wärmeverluste durch die Hülle auszugleichen. Gleichzeitig ist das auch der Wert, der im Energieausweis ihres Hauses steht.</p>",
               "<p id='questionanswer'>2. Reduzierung und Optimierung des Energieverbrauchs</p>",
               "<p>Geht es darum den Energieverbrauch ihres Gebäudes zu reduzieren, nützt ihnen der Primärenergiewert allerdings wenig. Dafür wird die ganze Patientenakte benötigt und nicht nur das Ergebnis. Schließlich müssen die einzelnen Bauteile auf ihre Wirkung innerhalb der Gebäudehülle überprüft werden. Es macht also keinen Sinn sich im Internet einen billigen Energieausweis ausstellen zu lassen, um Geld zu sparen, und damit zum Energie-Effizienz-Experten ihre Wahl zu gehen. Er muss in diesem Fall die ganze Arbeit noch einmal machen und sie zahlen doppelt.</p>",
+              "<img src='/images/Energieberatung-3-WEB-Format.jpeg' alt='sideImage'/>",
               "<p>Mit dem Modell ihres Gebäudes ist es  möglich, verschiedene Szenarien zu simulieren. Dazu gehört zum Beispiel der eingangs erwähnte Austausch der Fenster. Es wird geprüft, wie es sich auswirkt, wenn die neuen Fenster einen extrem geringen Wärmedurchgang haben. Oder ob es nicht doch günstiger ist die Fenster nicht in der höchsten Qualitätsstufe zu kaufen und  stattdessen die Dämmung der Außenwand um 2cm zu verstärken? Und wie weit muss gleichzeitig das Dach  gedämmt werden, damit die an den Fenstern und der Wand eingesparte Energie nicht wieder über das Dach entweicht?</p>",
               "<p>Ihr Energie-Effizienz-Experte wiegt alle diese Werte gegeneinander ab und ermittelt ein günstiges Verhältnis der Bauteile zueinander, bei dem sie eine möglichst hohe Energieeinsparung erzielen bei gleichzeitig geringsten Kosten. Technisch bedeutet das, keines der Bauteile sollte im Verhältnis zu dem Rest der Gebäudehülle für seine Bauteilgruppe zu stark, aber auch nicht zu schwach gedämmt sein.</p>",
               "<p>Wenn die Wärmeverluste der zukünftigen sanierten Gebäudehülle feststehen, wird passend dazu eine sinnvolle Anlagentechnik ermittelt, die ihnen möglichst geringe Heizkosten garantiert. Dazu muss die Heizung aber nicht zwingend ausgetauscht oder erneuert werden. Was genau geschehen soll, entscheiden sie im Beratungsgespräch mit ihrem Energie-Effizienz-Experten.</p>",
               "<p id='red-ribbon'>An dieser Stelle ist dringend anzumerken: Auch nach dem neuen Heizungsgesetz soll eine Heizung nur ausgetauscht werden, wenn sie mit fossilen Brennstoffen betrieben wird, mindestens 30 Jahre alt ist und der Austausch als wirtschaftlich sinnvoll erachtet wird!</p>",
               "<p>Zum Schluss bringt ihr Energie-Effizienz-Experten alle Maßnahmen in eine bautechnisch geeignete Reihenfolge und erstellt ihnen den sogenannten Sanierungsfahrplan. Bei Wohngebäuden wird dieser auch als individueller Sanierungsfahrplan iSFP bezeichnet, bei Gewerbeimmobilien spricht man nur von einem Sanierungsfahrplan. Dieses rechtlich wirksame Dokument erlaubt es ihnen nun für die einzelnen Maßnahmen der Sanierung oder einer Komplettsanierung zum Effizienz-Haus, die entsprechenden Förderungen und Kredite zu beantragen.</p>",
               "<p id='questionanswer'>3. Planung und Umsetzung unter wirtschaftlichen Bedingungen</p>",
+              "<img src='/images/Energieberatung-4-WEB-Format.jpeg' alt='sideImage'/>",
               "<p>Natürlich sollte man nicht ins Blaue hinein anfangen zu sanieren. Förderungen und ermäßigte Kredite gibt es in verschiedenen Höhen, je nachdem welche Energie-Effizienz-Stufe ihr Gebäude nach der Sanierung erreicht. Wenn sie die Kosten optimieren wollen, sollten sie darauf achten, dass der berechnete Wert der Primärenergie nicht  genau zwischen  zwei Stufen liegt, sondern noch die nächstniedrigere erreicht. So erhalten sie für einen geringen Einsatz eine höhere Förderung.</p>",
               "<p>Allerdings geht es bei der Wirtschaftlichkeit nicht nur um die aktuellen Baukosten. Mindestens genauso wichtig ist eine Bilanzierung der Nachhaltigkeit. Dazu gehört die mögliche Preisentwicklung auf dem Brennstoffmarkt, die Verschleißanfälligkeit der verbauten Materialien, sowie die Möglichkeiten zukünftiger Ausbauten oder Sanierungen.</p>",
               "<p>Bei allen diesen Themen steht ihnen ihr Energie-Effizienz-Experte im Laufe einer Energieberatung zur Seite und hilft ihnen die richtigen Entscheidungen zu treffen. Er ist ihr persönlicher Berater.</p>",
@@ -267,8 +270,8 @@ document.addEventListener("DOMContentLoaded", () => {
               "<p>Diese Geschichten gehen überall um und treffen auch genauso häufig auf empfängnisbereite Verschwörungstheoretiker, die sie gerne weiter erzählen. Was steckt also dahinter?</p>",
               "<p>Luft kann umso mehr Flüssigkeit halten, je wärmer sie ist. Kühlt die Luft ab, dann verliert sie ihre Tragfähigkeit und das Wasser fällt in Form von Tropfen aus. Das ist kurz gesagt die Entstehung von Regen.</p>",
               "<p>Der gleiche Vorgang der Kondensation kann auch innerhalb der Hauswand auftreten. Da der Innenraum in der kalten Jahreszeit wärmer ist als die Außenluft, kommt es zu einem Temperaturgefälle innerhalb der Wand. Dringt Feuchtigkeit von innen nach außen,  dann besteht die Möglichkeit, dass sie so weit abkühlt, bis Kondenswasser ausfällt. Bildlich gesprochen regnet es in der Wand. Dieser Vorgang erfolgt vorzugsweise an Übergängen zwischen stark unterschiedlichen Materialien wie zum Beispiel Stein, Putz und Polystyrol, also im besagten Fall direkt an der Wärmedämmung.  Ein deratiger Tauwassereintrag begünstigt natürlich die Schimmelbildung.</p>",
-              "<img src='/iconsThumbs/Ziegelwand-240-EPS-35-160.png'/>",
-              "<img src='/iconsThumbs/Ziegelwand-240-EPS-45-40.png'/>",
+              "<img src='/images/Ziegelwand-240-EPS-35-160.jpg' alt='square'/>",
+              "<img src='/images/Ziegelwand-240-EPS-45-40.jpg'  alt='square'/>",
               "<p>Betrachtet man jedoch die Simulation einer 24 cm dicken Außenwand aus Hohllochziegeln, mit einer Dämmung aus nur 4 cm starkem Polystyrol, wie sie zu Beginn der Wärmedämmung in den 70-er Jahren verwendet wurde, dann zeigt sich selbst hier kein Kondenswasserausfall. Auf der Außenseite steigt die Feuchtigkeit an, erreicht aber niemals den Taupunkt, also 100 %.</p>",
               "<p>In der zweiten Simulation, bei der die Dämmstoffdicke auf 16 cm erhöht wurde, wie es heute üblich ist, liegt die Kurve der relativen Luftfeuchtigkeit noch einmal tiefer. Es gibt also keine Möglichkeit, dass sich Kondenswasser zwischen Mauerwerk und Dämmung bilden kann.</p>",
               "<p>Kurz gesagt, alle Geschichten über Schimmelbildung zwischen Hauswand und Wärmedämmsystem müssen andere Ursachen haben. Möglicherweise wurde der Dachüberstand nicht der neuen Wandstärke angepasst oder es lagen andere Verarbeitungsfehler vor, die zu Regenwassereintrag geführt haben. Auf diese Weise kann es dann zur Hinterfeuchtung der Dämmung und zur Schimmelbildung gekommen sein.</p>",
@@ -349,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
               "<p id='questionanswer'>Was ist das sichtbare Lichtspektrum?</p>",
               "<p>Unter dem sichtbaren Lichtspektrum versteht man  alle Wellenlängen der elektromagnetischen Strahlung, die durch die Rezeptoren im menschlichen Auge erkannt werden können. Dazu gehören in der Regel alle Wellenlängen zwischen 420 nm und 700 nm. In der folgenden Norm-Kurve für das „Tag-Sehen“, also die Wahrnehmung bei signifikanter Beleuchtung, ist dargestellt wie intensiv die in diesem Bereich vorhandenen Wellenlängen wahrgenommen werden.</p>",
               
-              "<img src='/images/2-3-die Augenkurve-final.svg' alt='landscape' />",
+              "<img src='/images/2-3-die Augenkurve-final.jpg' alt='landscape' />",
               
               "<p id='questionanswer'>Welches Spektrum sollte eine gute Beleuchtung haben?</p>",
               "<p>Die ideale Beleuchtung sollte über das gesamte sichtbare Spektrum eine gleichmäßige Strahlungsstärke  haben. Dieses Ziel ist  jedoch nur schwer bis gar nicht zu erreichen. Selbst das Lichtspektrum der Sonne an einem Sommernachmittag, wie  im Bild unten dargestellt , weist Schwankungen auf. Trotzdem wird die Intensität der normierten Referenzfarben in der Graphik rechts nie kleiner als 99.</p>",
@@ -618,8 +621,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "<p id='questionanswer'>Wie kommt es zu Lichtflicker?</p>",
             "<p>Da das Versorgungsnetz eine Wechselspannung von 230 V und 50 Hz verteilt, benötigt jede Beleuchtung ein Vorschaltgerät (Netzteil), welches die Spannung und den Strom auf die richtigen Werte senkt. In manchen Fällen wird    statt eines geregelten Netzteils auch nur die Sparvariante eingesetzt. Das bedeutet, die Wechselspannung wird nur gleichgerichtet. Das lässt sich leicht an der Abbildung unten links erklären. Sie zeigt eine gewöhnliche Sinuswelle, wie sie die Spannung des Versorgungsnetzes beschreibt. Gleichrichten bedeutet nun, dass zwischen der Zuleitung und dem Verbraucher eine Weiche eingebaut ist. Diese sorgt dafür, dass der Strom bei einer positiven Halbwelle immer in die eine und bei einer negativen Halbwelle immer in die andere der beiden Zuleitungen geschickt wird. Durch diesen permanenten Wechsel fließt der Strom damit beim Verbraucher immer in die gleiche Richtung. Wenn nun noch ein Kondensator als Pufferung eingebaut wird, dann entsteht die Wellenform wie sie im rechten Bild zu sehen ist.</p>",
             
-            "<img src='/images/6-1-Netzspannungs-Sinus.svg' alt='square' />",
-            "<img src='/images/6-2-Restwelligkeit.svg' alt='square' />",
+            "<img src='/images/6-1-Netzspannungs-Sinus.jpg' alt='square' />",
+            "<img src='/images/6-2-Restwelligkeit.jpg' alt='square' />",
 
             "<p>Die Polarität bleibt immer gleich und die Spannung schwankt nur noch in begrenztem Rahmen. Das nennt man die Restwelligkeit. Die Höhe dieser Restwelligkeit entscheidet nun darüber ob die daraus resultierende Helligkeitsänderung der angeschlossenen Beleuchtung für  das menschliche  Auge noch sichtbar ist oder nicht.</p>",
             "<p>Aber auch wenn ein richtiges Netzteil verwendet wird, kommt es zum Lichtflicker, denn keine Regelung ist perfekt. Bei qualitativ hochwertigen Geräten gibt es gewöhnlich keine Probleme, so lange sie nicht überaltert sind. Bei billiger Ware kann der Lichtflicker aber auch die zulässigen Grenzwerte überschreiten.</p>",
@@ -627,7 +630,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "<p>Die Auswirkungen des Lichtflickers sind vielfältig. Sie können von nicht bewusst wahrnehmbaren Wirkungen bis zu epileptischen Anfällen bei empfindlichen Personen führen. In der Graphik unten ist das dargestellt. Je größer die Flicker-Frequenz ist, desto geringer ist der Einfluss auf den Menschen. Irgendwann ist  die Signalgeschwindigkeit der Nerven überschritten und sie können den Wechsel nicht mehr übermitteln.</p>",
             "<p>In der Graphik sind zwei Kurven dargestellt. Links bei den niedrigen Frequenzen befindet sich die Kurve Pst = 1. Sie beschreibt, in welchem Bereich bei statischer Betrachtung einer Lichtquelle mit einem erhöhten Risiko für einen Anfall gerechnet werden muss. Die rechte Kurve SVM = 1 zeigt den Bereich, in dem der sogenannte Stroboskop Effekt auftreten kann. Das bedeutet der Flicker ist bei einer relativen Bewegung des Beobachters zur Lichtquelle  wahrnehmbar. In diesem Bereich ist aber nicht mehr mit gesundheitlichen Folgen zu rechnen. Es kann höchstens noch zu Unwohlsein oder vorzeitiger Ermüdung kommen. In jedem Fall ist es sinnvoll immer unter den Kurven zu bleiben, das heißt im gelb oder grün hinterlegten Bereich.</p>",
             
-            "<img src='/images/6-6-Bewertung.png' alt='square' />",
+            "<img src='/images/6-6-Bewertung.jpg' alt='square' />",
 
             "<p id='questionanswer'>Was ist bei der Dimmung von Lampen zu beachten?</p>",
             "<p>Beleuchtungen werden oft gedimmt, in dem man sie mit hoher Geschwindigkeit periodisch ein- und ausschaltet. So lange dabei die Frequenz von 1250 Hz nicht unterschritten wird (Ende der Kurve SVM = 1) wird das niemand bemerken und es ist auch nicht mit Schädigungen zu rechnen. Aber es gibt auch Dimmer, die wesentlich langsamer arbeiten. Teilweise sind Geräte im Umlauf, die nur eine Schaltfrequenz von 100 Hz haben. Bei statischer Betrachtung wird das nicht auffallen, aber so bald eine Bewegung relativ zur Beleuchtung stattfindet liegt der Fall anders.</p>",
@@ -639,55 +642,55 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // 2. Navigation Bar Handling
     const pageData = {
-      about: {
-        title: "Über mich",
-        content: [
-          "<p>Geboren wurde ich in den sechziger Jahren des letzten Jahrhunderts. Nach meiner Schulzeit und Ausbildung zum Feingeräteelektroniker, begab ich mich auf den steinigen zweiten Bildungsweg, um die fachgebundene Hochschulreife zu erlangen und schließlich konnte ich 1990 das ersehnte Studium der Elektrotechnik an der Friedrich-Alexander-Universität in Erlangen beginnen.</p>",
-          "<p>Mein Interesse auf allen Gebieten war so groß, dass ich mich für das freie Fachstudium entschied. Im Laufe meines Hauptstudiums prägte sich bei mir eine Vorliebe für alle Bereiche der Hochfrequenztechnik heraus, deswegen belegte ich neben den zentralen Vorlesungen auch The­men wie integrierte Mikrowellenschaltungen, Lasertechnik und Elektromagnetische Umweltdia­gnostik.</p>",
-          "<p>Das Betätigungsfeld während meiner beruflichen Laufbahn war sehr weitläufig. Bereits während meiner Diplomarbeit beschäftigte ich mich mit dem damals erst aufkommenden Gebiet der schnellen Analog-Digital-Umsetzung zur Zwischenfrequenz Abtastung. Dazu kam die Speicherung der Daten auf selbst entwickelten ISA Karten und die Entwicklung von Empfängerschaltungen für die Aufnahme der hochfrequenten Signale. In der logischen Folge, umfassten meine ersten Projekte als junger Ingenieur, die dazu gehörende digitale Signalverarbeitung mit Arrithmetik-Prozessoren, CPLDs und FPGAs, bis hin zur Ausgabe der Signale über Digital-Analog-Umsetzer und Sendeendstufen.</p>",
-          "<p>Der räumlich nahe Betrieb der HF-Stufen und Umsetzer zur den digitalen Komponenten führte mich automatisch zu dem Gebiet der Elektromagnetischen Verträglichkeit auf Leiterplatten. Dieses Wissen kam mir später bei der Entwicklung von Miniatursen­dern für die Ortungstechnik zu gute. Hier lag das größte Problem darin, die Störeinwirkung auch auf kleinstem Raum zu unterbinden.</p>",
-          "<p>Flankiert wurde meine Arbeit an den Sendern vor allem von Themen der Aufbautechnik. Ich begann mich mit Herstellungsverfahren für industrielle und kommerzielle Miniaturschaltungen zu beschäftigen und entwickelte Baugruppen mit Chip-On-Bord Technik, welche gleichzeitig eine hohe mechanischer Impulsstabilität bieten musste. Die Entwicklung von Ortungssendern war lange Zeit mein ständiger Begleiter. Zwischen diesen Projekten gab es weitreichende andere Themen. Angefangen bei der schnellen Digitaltechnik mit LVPECL und CML Schaltungen zur Impulserzeugung, über die Entwicklung von Prüfgeräten für die Fertigung von Baugruppen, bis hin zu Industriegehäusen in 19 Zoll Technik und der damals ge­rade beginnenden Beleuchtungstechnik mit LEDs, war ich überall zuhause. Licht und Lichtspektren hatten schon seit meiner Zeit an der Universität eine faszinierende Wirkung auf mich. Dies war auch der Grund für mein In­teresse an LASER Systemen gewesen.</p>",
-          "<p>Heute ist die LED Beleuchtungstechnik ein fester Bestandteil meines Angebots. Dabei kann ich von einzelnen Strahlern, mit ihren komplexen, spektralen und thermischen Problemen, bis auf ganze Systeme zurück blicken.</p>",
-          "<p>Als Folge meiner Kenntnis über mechanische Belastungen verließ ich zeitweise den Bereich der Schaltungstechnik und beschäftigte mich mit mechanischen Themen, wie der Entwicklung elastischer Spulen auf Gummi und Silikon Trägern. Die große Herausforderung bei diesem Projekt bestand darin, eine Technologie zu finden die es ermöglichte, diese Komponenten kostengünstig, in der geforderten mechanischen Qualität und Bautoleranz herzustellen.</p>",
-          "<p>In den folgenden Jahren kam ich zurück zur Schaltungstechnik und zur Entwicklung von Miniatursendern, sowie der zugehörigen Infrastruktur mit all ihrer Vernetzung. Diese Arbeit erlaubte mir auch den Kreis zu meinem Studium zu schließen und mich wieder mit Fasertechnik und der Modulation von LASERN zu beschäftigen. Mein Interesse lag immer in der großen Vielfalt der Technologien und in der Herausforderung diszi­plinübergreifend Lösungen suchen zu müssen. Anders ausgedrückt könnte man sagen, je dünner die Luft wurde, desto mehr reizte mich die Aufgabe. So kam es, dass ich meine gesamte berufliche Laufbahn fast ausschließlich der Forschung und Entwicklung widmete.</p>",
-          "<p>Neben dieser Tätigkeit unterrichtete ich 5 Jahre lang nebenberuflich als Dozent an der Technikerschule und beschäftige mich seit über 15 Jahre mit Themen der Psychologie und Gruppenbildung. Natürlich kam in der Forschung die Betreuung junger Studenten und Studentinnen nie zu kurz. Eine Arbeit, die mir immer viel Freude machte. Ich bildete sie während ihrer Zeit als Hilfswissenschaftler aus und begleitete sie während ihrer Gradierungsarbeiten, bis zu ihrem Abschluss. In der Rückschau kann ich sagen, nie habe ich die Lust verloren dem Neuen zu begegnen und mich auf eine weitere spannende Aufgabe einzulassen. Der freie Geist war mein ständiger Ratgeber, das Interesse an neuen Gebieten und die Respektlosigkeit vor der Herausforderung mein Antrieb.</p>",
-          "<p>Bleiben wir doch einfach frei, dann werden wir in der Zukunft jede Herausforderung meistern.</p>",
-          "<p>Reiner Retkowski</p>",
-          "<p></p>",
-          "<p></p>",
-          "<p></p>"
-        ],
-        aboutSlider: { // Renamed "slider" to "aboutSlider"
-            aboutSlides: [ // Renamed "slides" to "aboutSlides"
-                {
-                    id: "uberSlide",
-                    title: "Über mich",
-                    image: "/iconsThumbs/bild-preisverleihung-cut.jpg" , // Replace with actual image path
-                    paragraphs: [
-                        "Ich arbeite seit vielen Jahren in der Forschung und Entwicklung, besonders im Bereich der Hochfrequenztechnik und Ortungstechnik. Meine Arbeit umfasst unter anderem die Entwicklung von Ortungssystemen, die in Echtzeit die Position von Objekten und Spielern verfolgen. Besonders in der Sportindustrie, wie zum Beispiel der NHL, finden meine Lösungen Anwendung.",
-                        "Mit meiner Expertise in der Miniaturisierung von Elektroniksystemen und der Entwicklung robuster, kostengünstiger Geräte habe ich maßgeblich zur Entwicklung neuer Technologien beigetragen. Ich freue mich, in Zukunft weitere innovative Projekte zu begleiten und umzusetzen."
-                    ]
-                },
-                {
-                    id: "careerSlide",
-                    title: "Berufliche Laufbahn",
-                    image: "/iconsThumbs/reiner-retkowski.256x256.jpg", // Replace with actual image path
-                    paragraphs: [
-                        "Seit 2003 leite ich mein eigenes Ingenieurbüro, das sich auf Energieeffizienz und Schaltungstechnik spezialisiert hat. Während meiner Zeit bei Fraunhofer war ich an der Entwicklung von Hochfrequenztechnologien beteiligt. Diese Erfahrungen setze ich nun erfolgreich in der Entwicklung von LED-Beleuchtungssystemen und Ortungstechnik um.",
-                        "Ich freue mich, meine Expertise in neuen und innovativen Projekten einzubringen und meine Leidenschaft für Technologie und Forschung weiter auszuleben."
-                    ]
-                },
-                {
-                    id: "ledSlide",
-                    title: "LED-Beleuchtung und Forschung",
-                    image: "path/to/led-beleuchtung.jpg", // Replace with actual image path
-                    paragraphs: [
-                        "Durch meine umfassenden Kenntnisse in der Elektronik und Beleuchtungstechnik biete ich maßgeschneiderte Lösungen für die Entwicklung von LED-Systemen an. Besonders interessant finde ich die Herausforderungen, die die Miniaturisierung und thermische Problematik von LEDs mit sich bringen. Meine Lösungen bieten dabei nicht nur eine hohe Effizienz, sondern auch eine lange Lebensdauer und eine stabile Leistung."
-                    ]
-                }
-                ]
-            }
-        },
+      // about: {
+      //   title: "Über mich",
+      //   content: [
+      //     "<p>Geboren wurde ich in den sechziger Jahren des letzten Jahrhunderts. Nach meiner Schulzeit und Ausbildung zum Feingeräteelektroniker, begab ich mich auf den steinigen zweiten Bildungsweg, um die fachgebundene Hochschulreife zu erlangen und schließlich konnte ich 1990 das ersehnte Studium der Elektrotechnik an der Friedrich-Alexander-Universität in Erlangen beginnen.</p>",
+      //     "<p>Mein Interesse auf allen Gebieten war so groß, dass ich mich für das freie Fachstudium entschied. Im Laufe meines Hauptstudiums prägte sich bei mir eine Vorliebe für alle Bereiche der Hochfrequenztechnik heraus, deswegen belegte ich neben den zentralen Vorlesungen auch The­men wie integrierte Mikrowellenschaltungen, Lasertechnik und Elektromagnetische Umweltdia­gnostik.</p>",
+      //     "<p>Das Betätigungsfeld während meiner beruflichen Laufbahn war sehr weitläufig. Bereits während meiner Diplomarbeit beschäftigte ich mich mit dem damals erst aufkommenden Gebiet der schnellen Analog-Digital-Umsetzung zur Zwischenfrequenz Abtastung. Dazu kam die Speicherung der Daten auf selbst entwickelten ISA Karten und die Entwicklung von Empfängerschaltungen für die Aufnahme der hochfrequenten Signale. In der logischen Folge, umfassten meine ersten Projekte als junger Ingenieur, die dazu gehörende digitale Signalverarbeitung mit Arrithmetik-Prozessoren, CPLDs und FPGAs, bis hin zur Ausgabe der Signale über Digital-Analog-Umsetzer und Sendeendstufen.</p>",
+      //     "<p>Der räumlich nahe Betrieb der HF-Stufen und Umsetzer zur den digitalen Komponenten führte mich automatisch zu dem Gebiet der Elektromagnetischen Verträglichkeit auf Leiterplatten. Dieses Wissen kam mir später bei der Entwicklung von Miniatursen­dern für die Ortungstechnik zu gute. Hier lag das größte Problem darin, die Störeinwirkung auch auf kleinstem Raum zu unterbinden.</p>",
+      //     "<p>Flankiert wurde meine Arbeit an den Sendern vor allem von Themen der Aufbautechnik. Ich begann mich mit Herstellungsverfahren für industrielle und kommerzielle Miniaturschaltungen zu beschäftigen und entwickelte Baugruppen mit Chip-On-Bord Technik, welche gleichzeitig eine hohe mechanischer Impulsstabilität bieten musste. Die Entwicklung von Ortungssendern war lange Zeit mein ständiger Begleiter. Zwischen diesen Projekten gab es weitreichende andere Themen. Angefangen bei der schnellen Digitaltechnik mit LVPECL und CML Schaltungen zur Impulserzeugung, über die Entwicklung von Prüfgeräten für die Fertigung von Baugruppen, bis hin zu Industriegehäusen in 19 Zoll Technik und der damals ge­rade beginnenden Beleuchtungstechnik mit LEDs, war ich überall zuhause. Licht und Lichtspektren hatten schon seit meiner Zeit an der Universität eine faszinierende Wirkung auf mich. Dies war auch der Grund für mein In­teresse an LASER Systemen gewesen.</p>",
+      //     "<p>Heute ist die LED Beleuchtungstechnik ein fester Bestandteil meines Angebots. Dabei kann ich von einzelnen Strahlern, mit ihren komplexen, spektralen und thermischen Problemen, bis auf ganze Systeme zurück blicken.</p>",
+      //     "<p>Als Folge meiner Kenntnis über mechanische Belastungen verließ ich zeitweise den Bereich der Schaltungstechnik und beschäftigte mich mit mechanischen Themen, wie der Entwicklung elastischer Spulen auf Gummi und Silikon Trägern. Die große Herausforderung bei diesem Projekt bestand darin, eine Technologie zu finden die es ermöglichte, diese Komponenten kostengünstig, in der geforderten mechanischen Qualität und Bautoleranz herzustellen.</p>",
+      //     "<p>In den folgenden Jahren kam ich zurück zur Schaltungstechnik und zur Entwicklung von Miniatursendern, sowie der zugehörigen Infrastruktur mit all ihrer Vernetzung. Diese Arbeit erlaubte mir auch den Kreis zu meinem Studium zu schließen und mich wieder mit Fasertechnik und der Modulation von LASERN zu beschäftigen. Mein Interesse lag immer in der großen Vielfalt der Technologien und in der Herausforderung diszi­plinübergreifend Lösungen suchen zu müssen. Anders ausgedrückt könnte man sagen, je dünner die Luft wurde, desto mehr reizte mich die Aufgabe. So kam es, dass ich meine gesamte berufliche Laufbahn fast ausschließlich der Forschung und Entwicklung widmete.</p>",
+      //     "<p>Neben dieser Tätigkeit unterrichtete ich 5 Jahre lang nebenberuflich als Dozent an der Technikerschule und beschäftige mich seit über 15 Jahre mit Themen der Psychologie und Gruppenbildung. Natürlich kam in der Forschung die Betreuung junger Studenten und Studentinnen nie zu kurz. Eine Arbeit, die mir immer viel Freude machte. Ich bildete sie während ihrer Zeit als Hilfswissenschaftler aus und begleitete sie während ihrer Gradierungsarbeiten, bis zu ihrem Abschluss. In der Rückschau kann ich sagen, nie habe ich die Lust verloren dem Neuen zu begegnen und mich auf eine weitere spannende Aufgabe einzulassen. Der freie Geist war mein ständiger Ratgeber, das Interesse an neuen Gebieten und die Respektlosigkeit vor der Herausforderung mein Antrieb.</p>",
+      //     "<p>Bleiben wir doch einfach frei, dann werden wir in der Zukunft jede Herausforderung meistern.</p>",
+      //     "<p>Reiner Retkowski</p>",
+      //     "<p></p>",
+      //     "<p></p>",
+      //     "<p></p>"
+      //   ],
+      //   aboutSlider: { // Renamed "slider" to "aboutSlider"
+      //       aboutSlides: [ // Renamed "slides" to "aboutSlides"
+      //           {
+      //               id: "uberSlide",
+      //               title: "Über mich",
+      //               image: "/iconsThumbs/bild-preisverleihung-cut.jpg" , // Replace with actual image path
+      //               paragraphs: [
+      //                   "Ich arbeite seit vielen Jahren in der Forschung und Entwicklung, besonders im Bereich der Hochfrequenztechnik und Ortungstechnik. Meine Arbeit umfasst unter anderem die Entwicklung von Ortungssystemen, die in Echtzeit die Position von Objekten und Spielern verfolgen. Besonders in der Sportindustrie, wie zum Beispiel der NHL, finden meine Lösungen Anwendung.",
+      //                   "Mit meiner Expertise in der Miniaturisierung von Elektroniksystemen und der Entwicklung robuster, kostengünstiger Geräte habe ich maßgeblich zur Entwicklung neuer Technologien beigetragen. Ich freue mich, in Zukunft weitere innovative Projekte zu begleiten und umzusetzen."
+      //               ]
+      //           },
+      //           {
+      //               id: "careerSlide",
+      //               title: "Berufliche Laufbahn",
+      //               image: "/iconsThumbs/reiner-retkowski.256x256.jpg", // Replace with actual image path
+      //               paragraphs: [
+      //                   "Seit 2003 leite ich mein eigenes Ingenieurbüro, das sich auf Energieeffizienz und Schaltungstechnik spezialisiert hat. Während meiner Zeit bei Fraunhofer war ich an der Entwicklung von Hochfrequenztechnologien beteiligt. Diese Erfahrungen setze ich nun erfolgreich in der Entwicklung von LED-Beleuchtungssystemen und Ortungstechnik um.",
+      //                   "Ich freue mich, meine Expertise in neuen und innovativen Projekten einzubringen und meine Leidenschaft für Technologie und Forschung weiter auszuleben."
+      //               ]
+      //           },
+      //           {
+      //               id: "ledSlide",
+      //               title: "LED-Beleuchtung und Forschung",
+      //               image: "path/to/led-beleuchtung.jpg", // Replace with actual image path
+      //               paragraphs: [
+      //                   "Durch meine umfassenden Kenntnisse in der Elektronik und Beleuchtungstechnik biete ich maßgeschneiderte Lösungen für die Entwicklung von LED-Systemen an. Besonders interessant finde ich die Herausforderungen, die die Miniaturisierung und thermische Problematik von LEDs mit sich bringen. Meine Lösungen bieten dabei nicht nur eine hohe Effizienz, sondern auch eine lange Lebensdauer und eine stabile Leistung."
+      //               ]
+      //           }
+      //           ]
+      //       }
+      //   },
   kontak: {
       title: "Kontakt",
       content: [
@@ -699,16 +702,14 @@ document.addEventListener("DOMContentLoaded", () => {
         content: [
             "<div class='form-card'><h3>Kontaktformular</h3><p>Möchten Sie mit uns Kontakt aufnehmen, senden Sie uns eine Nachricht:</p>",
             "<form id='form'>",
-            "<div class='form-group'><label for='salutation'>Anrede:</label><select id='salutation' name='salutation'><option value='Herr'>Herr</option><option value='Frau'>Frau</option></select></div>",
+            "<div class='form-group'><label for='salutation'>Anrede:</label><select id='salutation' name='salutation'><option value='Herr'>Herr</option><option value='Frau'>Frau</option><option value='Divers'>Divers</option></select></div>",
             "<div class='form-group'><label for='firstName'>Vorname:</label><input type='text' name='firstName' id='firstName' placeholder='Ihr Vorname'></div>",
             "<div class='form-group'><label for='lastName'>Nachname:</label><input type='text' name='lastName' id='lastName' placeholder='Ihr Nachname'></div>",
             "<div class='form-group'><label for='email'>E-Mail:</label><input type='email' name='email' id='email' placeholder='Ihre E-Mail'></div>",
             "<div class='form-group'><label>Ich möchte mehr erfahren über:</label><br>" +
-            "<input type='checkbox' id='schaltungsdesign' name='interest[]' value='Schaltungsdesign'><label for='schaltungsdesign'>Schaltungsdesign</label><br>" +
-            "<input type='checkbox' id='systementwicklung' name='interest[]' value='Systementwicklung'><label for='systementwicklung'>Systementwicklung</label><br>" +
-            "<input type='checkbox' id='beleuchtungstechnik' name='interest[]' value='Beleuchtungstechnik'><label for='beleuchtungstechnik'>Beleuchtungstechnik</label><br>" +
-            "<input type='checkbox' id='coaching' name='interest[]' value='Coaching'><label for='coaching'>Coaching</label><br>" +
-            "<input type='checkbox' id='schulung' name='interest[]' value='Schulung'><label for='schulung'>Schulung</label></div>",
+            "<input type='checkbox' id='Energieberatung' name='interests[]' value='Energieberatung'><label for='Energieberatung'>Energieberatung</label><br>" +
+            "<input type='checkbox' id='beleuchtungstechnik' name='interests[]' value='Beleuchtungstechnik'><label for='beleuchtungstechnik'>Beleuchtungstechnik</label><br>" +
+            "<input type='checkbox' id='coaching' name='interests[]' value='Coaching'><label for='coaching'>Coaching</label><br></div>",
             "<div class='form-group'><label for='dataConsent'>Datenschutz Zustimmung:</label><select id='dataConsent' name='dataConsent'><option value='Nicht einverstanden'>Nicht einverstanden</option><option value='Ich stimme zu'>Ich stimme zu</option></select></div>",
             "<div class='form-group'><label for='comments'>Sonstiges:</label><input type='text' name='comments' id='comments' placeholder='Zusätzliche Informationen'></div>",
             "<div class='form-group'><input type='submit' id='button' value='Send Email'></div>",
@@ -724,7 +725,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "<p><strong>Licenses:</strong></p>",
           "<p>Slider homepage: © John Smith #163254966</p>",
           "<p>More photos home page:</p>",
-          "<ul><li>© liuzishan #203877288 System development</li><li>© shaiith #232799333 Lighting technology</li><li>© Robert Kneschke #245106771 Training</li><li>© Craig Chanowski #176490466 Coaching</li><li>© Edelweiss #51490712 Circuit design</li></ul>"
+          "<ul><li>© Günter Albers #163254966 Startseite</li><li>© Sarah Retkowski #13-11-2024 Startseite</li><li>© shaiith #232799333 Startseite</li><li>© vegefox.com # 40063781 Aktuelle Lage 1</li><li>© sirichai #881498936 Energieberatung 1</li><li>© Coloures-Pic #39865139 Energieberatung 2</li><li>© Coloures-Pic #39865139 Energieberatung 2</li><li>© K. C. #107155877 Energieberatung 3</li><li>© Alexander Raths #80217910 Energieberatung.4</li><li>© contrastwerkstatt #283869220 DIY Rentabilität</li><li>© Igal #1015663130 QNG-Siegel</li><li>© ImagePulse #942772032 LCA-Bilanzierung</li><li>© Mikiehl Design #527962462 Mythen & Technik 1</li><li>© outdoorpixel #32400510 Mythen & Technik 2</li></ul>"
         ]
       },
       dataProtection: {

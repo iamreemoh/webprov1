@@ -236,11 +236,34 @@ body {
   margin: 2% 7%;
 }
 
-  .tab-content img[alt="square"] {
-    display: inline-block; 
-    margin: 2% 7%;
-    max-width: 30%; /* Adjust width for square images */
-  }
+.tab-content img[alt="square"] {
+  display: inline-block; 
+  margin: 2% 7%;
+  max-width: 30%; /* Adjust width for square images */
+}
+
+.tab-content img[alt="sideImage"] {
+  float: right; 
+  margin: 2% 0% 2% 2%;
+  max-width: 30%; /* Adjust width for square images */
+}
+
+/* .tab-content img[alt="sideImage"] {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+} */
+
+/* .tab-content img[alt="sideImage"] {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  max-width: 250px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
 
 .table-greenrow{
   background-color: rgb(156, 216, 186);
