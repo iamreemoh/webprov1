@@ -364,6 +364,62 @@ body {
   text-decoration: underline;
 }
 
+    section {
+      scroll-margin-top: 80px; /* Adjust this value according to the height of your navbar */
+    }
+    /* Centering the table of contents on the page */
+    .toc-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: calc(100vh + 6px);  */
+      background: linear-gradient(135deg, #e0f7fa, #e1bee7); /* Soft gradient background */
+      padding: 20px; /* Padding to ensure content doesn't touch edges */
+      border-radius: 10px; /* Rounded edges for a smooth look */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    }
+
+    /* Style for the unordered list inside the table of contents */
+    .toc-container ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-width: 1000px; /* Restrict content width for readability */
+      width: 100%; /* Make it responsive */
+      text-align: left; /* Align content to the left */
+    }
+
+    /* Style for the list items */
+    .toc-container li {
+      margin: 12px 0;
+    }
+
+    /* Style for the anchor links */
+    .toc-container li a {
+      text-decoration: none;
+      color: #6e7275;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    /* Hover effect for anchor links */
+    .toc-container li a:hover {
+      /* text-decoration: underline; */
+      color: #0056b3;
+    }
+
+    /* Heading for the table of contents */
+    .toc-container h3 {
+      text-align: center; /* Align heading to the left */
+
+      margin-bottom: 15px;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      font-size: 20px;
+    }
+
 /* Footer Links Styling */
 .footer-links nav ul {
   list-style: none;
@@ -622,6 +678,7 @@ body {
     .lighting-table tr:hover {
       background-color: #e6e6e6; /* Slightly darker on hover */
     }
+    
 
     /* Footer styling */
     .footer {
