@@ -268,7 +268,9 @@ body {
 .table-greenrow{
   background-color: rgb(156, 216, 186);
 }
-
+.lighting-table .table-greenrow:hover {
+  background-color: rgb(116, 176, 146) !important; /* Darker green on hover */
+}
 /* .table-redrow{
   background-color: rgb(235, 159, 159);
 } */
@@ -314,6 +316,10 @@ body {
 /* Table Borders */
 .lighting-table td, .lighting-table th {
   border: 1px solid #ddd; /* Cell borders */
+}
+
+.lighting-table .boldpoint{
+  font-weight: bold;
 }
   
 /* General Footer Styling */

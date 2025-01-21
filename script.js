@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
               "<img src='/images/Energieberatung-2-WEB-Format.jpeg' alt='sideImage'/>",
               "<p>Diese Frage kann ihnen niemand allgemeingültig beantworten. Das hängt  tatsächlich von ihrem Gebäude ab. Was tut ein Energie-Effizienz-Experte in diesem Fall? Er lässt sich von ihnen die Pläne geben oder nimmt selbst Maß und bildet ihr gesamtes Gebäude in einem virtuellen Modell nach. Anschließend wird der Wärmedurchgang der Bauteile der wärmedämmenden Hülle berechnet und in das Modell eingefügt. Bei Nichtwohngebäuden kommt  zusätzlich die Definition der unterschiedlichen Bereiche, der sogenannten Zonen dazu.</p>",
               "<p>Das Ergebnis ist eine Abbildung ihres Gebäudes in seiner Gesamtheit. Mit diesem Modell ist es überhaupt erst möglich, die Wirkung neuer Fenster zu ermitteln oder die benötigte Schichtdicke der Dämmung zu berechnen.</p>",
-              "<p>Nachdem die Betrachtung der Gebäudehülle abgeschlossen ist, erfolgt die Aufnahme der Anlagentechnik. Dazu gehört alles, was sie benötigen, um den Wärmeverlust durch die Hülle des Gebäudes wieder auszugleichen, kurz gesagt die Heizung. Hier spielt es eine Rolle,  womit sie heizen, wie effektiv ihre Heizung arbeitet und wie viel Strom sie zur Steuerung benötigt. Positiv wirkt es sich dabei aus, wenn sie Sonnenkollektoren auf dem Dach haben, oder vielleicht  schon eine Solaranlage. Bei Nichtwohngebäuden wird zusätzlich der Lichteinfall von außen und bilanziert und berechnet wie viel elektrische Energie für die Beleuchtung notwendig ist um die gesetzlich vorgeschriebene Helligkeit am Arbeitsplatz zu gewährleisten.</p>",
+              "<p>Nachdem die Betrachtung der Gebäudehülle abgeschlossen ist, erfolgt die Aufnahme der Anlagentechnik. Dazu gehört alles, was sie benötigen, um den Wärmeverlust durch die Hülle des Gebäudes wieder auszugleichen, kurz gesagt die Heizung. Hier spielt es eine Rolle,  womit sie heizen, wie effektiv ihre Heizung arbeitet und wie viel Strom sie zur Steuerung benötigt. Positiv wirkt es sich dabei aus, wenn sie Sonnenkollektoren auf dem Dach haben, oder vielleicht  schon eine Solaranlage. Bei Nichtwohngebäuden wird zusätzlich der Lichteinfall von außen bilanziert und berechnet wie viel elektrische Energie für die Beleuchtung notwendig ist um die gesetzlich vorgeschriebene Helligkeit am Arbeitsplatz zu gewährleisten.</p>",
               "<p>Aus diesem Gesamtmodell, nennen wir es die Patientenakte ihres Gebäudes, ermittelt ihr Energie-Effizienz-Experte nun den Primärenergieverbrauch ihres Hauses. Das ist die Energie, die ihrem Gebäude letztenendes zugeführt werden muss, um die Wärmeverluste durch die Hülle auszugleichen. Gleichzeitig ist das auch der Wert, der im Energieausweis ihres Hauses steht.</p>",
               "<p id='questionanswer'>2. Reduzierung und Optimierung des Energieverbrauchs</p>",
               "<p>Geht es darum den Energieverbrauch ihres Gebäudes zu reduzieren, nützt ihnen der Primärenergiewert allerdings wenig. Dafür wird die ganze Patientenakte benötigt und nicht nur das Ergebnis. Schließlich müssen die einzelnen Bauteile auf ihre Wirkung innerhalb der Gebäudehülle überprüft werden. Es macht also keinen Sinn sich im Internet einen billigen Energieausweis ausstellen zu lassen, um Geld zu sparen, und damit zum Energie-Effizienz-Experten ihre Wahl zu gehen. Er muss in diesem Fall die ganze Arbeit noch einmal machen und sie zahlen doppelt.</p>",
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Third tab
           [
               "<h2>Ist selbst Hand anlegen bei Wohngebäuden rentabel</h2>",
-              "<p>Bauen ist immer eine teure Angelegenheit. Vor allem junge Familien brauchen Platz, haben aber oft nicht das Geld, um alle Gewerke von Handwerkern durchführen zu lassen. Das treibt an manchen Stellen ziemlich haarsträubende Stilblüten. Teilweise kommt es vor, dass Bauherren schon nach kurzer Einweisung damit beginnen Wände zu mauern, obwohl sie vorher noch nie eine Wasserwaage in der Hand gehalten haben . Dabei sollte man wissen, dass selbst ein gelernter Maurer eine Zertifizierung benötigt, um überhaupt Ecken mauern zu dürfen.</p>",
+              "<p>Bauen ist immer eine teure Angelegenheit. Vor allem junge Familien brauchen Platz, haben aber oft nicht das Geld, um alle Gewerke von Handwerkern durchführen zu lassen. Das treibt an manchen Stellen ziemlich haarsträubende Stilblüten. Teilweise kommt es vor, dass Bauherren schon nach kurzer Einweisung damit beginnen Wände zu mauern, obwohl sie vorher noch nie eine Wasserwaage in der Hand gehalten haben. Dabei sollte man wissen, dass selbst ein gelernter Maurer eine Zertifizierung benötigt, um überhaupt Ecken mauern zu dürfen.</p>",
               "<p>Um die staatlichen Förderungen und Kredite der KfW zu bekommen muss  man jedoch nachweisen, dass das Gewerk nach allen Regeln der Kunst fachlich richtig ausgeführt wurde. Diese Bestätigungen werden normalerweise nach Abschluss der Arbeiten von den mitwirkenden Handwerksfirmen ausgestellt und von ihrem Energie-Effizienz-Experten gesammelt und eingereicht.</p>",
               "<p>Auch wenn sie selbst Hand anlegen, muss es für die von ihnen durchgeführten Arbeiten eine entsprechende Bescheinigung geben, dass alle Arbeiten fachgerecht ausgeführt wurden. Diese kann ihnen nach dem Gesetz auch ihr Energie-Effizienz-Experte ausstellen, aber das ist blanke Theorie. Niemand außer den speziell von den Herstellern geschulten Fachleuten kann ihnen definitiv sagen wie moderne Materialien fachgerecht verarbeitet werden, auch ihr Energie-Experte nicht. Aus diesem Grund wird er sich davor hüten, ihnen eine derartige Bescheinigung auszustellen.</p>",
               "<p>Was kann man  dann noch tun, um die Kosten etwas zu reduzieren? Im Wesentlichen gibt es zwei  praktikable Möglichkeiten:</p>",
@@ -207,12 +207,12 @@ document.addEventListener("DOMContentLoaded", () => {
               <thead>
                 <tr>
                   <th>QNG PLUS</th>
-                  <th>überdurchschnittlicher Anspruch</th>
+                  <td>überdurchschnittlicher Anspruch</td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>QNG PREMIUM</td>
+                  <th>QNG PREMIUM</th>
                   <td>gehobener Anspruch</td>
                 </tr>
               </tbody>
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Fifth tab
           [
               "<h2>Lebenszyklus Analyse – LCA (Life Cycle Assessment)</h2>",
-              "<p>Was ist LCA?</p>",
+              "<p id='questionanswer'>Was ist LCA?</p>",
               "<p>Unter dem Begriff Lebenszyklus-Analyse versteht man einen Paradigmenwechsel in der Gebäudeerrichtung und -sanierung. Während bei der Analyse des Energieverbrauchs nur der laufende Betrieb betrachtet wird, werden für die Berechnung der Nachhaltigkeitsklasse (NH) auch die sogenannten grauen Energien berücksichtigt. Darunter versteht man alle Energien, die für die Erstellung der Bauteile, ihren Ersatz  wegen Verschleiß und ihre Entsorgung benötigt werden.</p>",
               "<p id='questionanswer'>Warum ist die LCA Bilanzierung auch ohne QNG Siegel sinnvoll?</p>",
               "<p>Bei der Beschreibung von Förderungen und Krediten findet sich oft die Bezeichnungen Treibhausgasemissionen nach Vorgaben des QNG Siegels oder klimafreundliches Gebäude. Dahinter verbirgt sich nichts anderes als die LCA Bilanzierung. Es ist also nicht nötig ein QNG Siegel zu beantragen, um  die entsprechende Förderung oder den entsprechenden Kredit zu bekommen. Natürlich gibt es Unterschiede bei der Förderung, aber diese beziehen sich oft nur auf die maximale Höhe des Kredits. An dieser Stelle muss sehr genau abgewogen werden, ob sich der finanzielle Mehraufwand für das QNG Siegel wirklich lohnt.</p>",
@@ -235,13 +235,13 @@ document.addEventListener("DOMContentLoaded", () => {
               `<table class="lighting-table">
                 <thead>
                   <tr>
-                    <th>GWP_100</th>
-                    <th>kg CO2 Äquivalent / m² und Jahr</th>
+                    <th>GWP 100</th>
+                    <td>kg CO2 Äquivalent / m² und Jahr</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>PENRT</td>
+                    <th>PENRT</th>
                     <td>kWh / m² und Jahr</td>
                   </tr>
                 </tbody>
@@ -317,13 +317,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>und der Kessel wird mit Gas oder Öl beheizt</td>
                   </tr>
                   <tr>
-                    <td>und handelt sich um einen alten Konstant-Temperatur-Kessel</td>
+                    <td>und es handelt sich um einen alten Konstant-Temperatur-Kessel</td>
                   </tr>
                   <tr>
                     <td>und die Heizungsanlage hat zwischen 4 kW und 400 kW</td>
                   </tr>
                   <tr>
-                    <td>und der Aufwand ist wirtschaftlich vertretbar!</td>
+                    <td class="boldpoint">UND DER AUFWAND IST WIRTSCHAFTLICH VERTRETBAR!</td>
                   </tr>
                 </tbody>
               </table>
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
               "<img src='/images/2-3-die Augenkurve-final.jpg' alt='landscape' />",
               
               "<p id='questionanswer'>Welches Spektrum sollte eine gute Beleuchtung haben?</p>",
-              "<p>Die ideale Beleuchtung sollte über das gesamte sichtbare Spektrum eine gleichmäßige Strahlungsstärke  haben. Dieses Ziel ist  jedoch nur schwer bis gar nicht zu erreichen. Selbst das Lichtspektrum der Sonne an einem Sommernachmittag, wie  im Bild unten dargestellt , weist Schwankungen auf. Trotzdem wird die Intensität der normierten Referenzfarben in der Graphik rechts nie kleiner als 99.</p>",
+              "<p>Die ideale Beleuchtung sollte über das gesamte sichtbare Spektrum eine gleichmäßige Strahlungsstärke  haben. Dieses Ziel ist  jedoch nur schwer bis gar nicht zu erreichen. Selbst das Lichtspektrum der Sonne an einem Sommernachmittag, wie  im Bild unten dargestellt, weist Schwankungen auf. Trotzdem wird die Intensität der normierten Referenzfarben in der Graphik rechts nie kleiner als 99.</p>",
               
               "<img src='/images/2-8-spectrum-blauer-Himmel.png' alt='square' />",
               "<img src='/images/2-8-histogram-blauer-Himmel.png' alt='square' />",
@@ -383,7 +383,7 @@ document.addEventListener("DOMContentLoaded", () => {
               "<img src='/images/3-5-LED-1-warm-neutral-Farbsegel.png' alt='square' />",
 
               "<p id='questionanswer'>Was ist der Farbwiedergabeindex?</p>",
-              "<p>Der Farbwiedergabe Index ist ein Mittelwert, der die Qualität des Lichtspektrums beschreiben soll. Es gibt zwei verschiedene Spezifikationen. Die ältere wird mit Ra bezeichnet und stammt aus der Zeit zu Anfang des 20. Jahrhunderts. Bei  der Messung zur Ermittlung von R werden nur 8 Referenzfarben (R1 bis R8) berücksichtigt. Das war zu dieser Zeit vollkommen ausreichend, weil es noch keine Leuchtstoffe gab, welche die individuelle Formung des Spektrums zuließen. Oder anders ausgedrückt:  Die Form des Spektrums zweier Glühlampe unterscheidet sich nur wenig , daher genügen auch wenige Stützstellen um die Kurve des Spektrums nachvollziehen zu können.</p>",
+              "<p>Der Farbwiedergabeindex ist ein Mittelwert, der die Qualität des Lichtspektrums beschreiben soll. Es gibt zwei verschiedene Spezifikationen. Die ältere wird mit Ra bezeichnet und stammt aus der Zeit zu Anfang des 20. Jahrhunderts. Bei  der Messung zur Ermittlung von R werden nur 8 Referenzfarben (R1 bis R8) berücksichtigt. Das war zu dieser Zeit vollkommen ausreichend, weil es noch keine Leuchtstoffe gab, welche die individuelle Formung des Spektrums zuließen. Oder anders ausgedrückt:  Die Form des Spektrums zweier Glühlampe unterscheidet sich nur wenig, daher genügen auch wenige Stützstellen um die Kurve des Spektrums nachvollziehen zu können.</p>",
               "<p>Durch die Einführung der Leuchtstoffröhren und später auch der weißen LEDs, war diese geringe Anzahl an Referenzfarben nicht mehr ausreichend, daher wurde der Farbwiedergabeindex um die Farben R9 bis R15 erweitert und erhielt die Bezeichnung Re für extended (erweitert).</p>",
               
               "<img src='/images/3-3-LED-1-neutral-histogram.png' alt='square' />",
@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", () => {
               "<img src='/images/3-2-Leuchtstoff-spectrum.png' alt='square' />",
               "<img src='/images/3-2-Leuchtstoff-histogram.png' alt='square' />",
 
-              "<p>Das Balkendiagramm auf der rechten Seite liefert die Erklärung , warum diese Art der Beleuchtung immer noch  so beliebt ist. Die Leuchtstoffe wurden so gewählt, dass die ersten acht Referenzfarben gute Werte haben. Dadurch steigt der Farbwiedergabe Index Ra auf 88, während der Vergleich mit dem erweiterten Farbwiedergabeindex Re mit einem Wert von 83 die Wahrheit über diese schlechte Beleuchtung enthüllt.</p>",
+              "<p>Das Balkendiagramm auf der rechten Seite liefert die Erklärung, warum diese Art der Beleuchtung immer noch  so beliebt ist. Die Leuchtstoffe wurden so gewählt, dass die ersten acht Referenzfarben gute Werte haben. Dadurch steigt der Farbwiedergabe Index Ra auf 88, während der Vergleich mit dem erweiterten Farbwiedergabeindex Re mit einem Wert von 83 die Wahrheit über diese schlechte Beleuchtung enthüllt.</p>",
               "<p>Warum ist das immer noch so? Leider hat es die Leuchtmittel-Industrie geschafft, dass auf den Leuchtmittelverpackungen immer noch der alte Farbwiedergabeindex angegeben werden darf. Wie wenig Aussagekraft dieser Wert heute noch hat zeigen die Bilder ganz eindeutig.</p>",
               "<p id='questionanswer'>Die Glühlampe</p>",
               "<p>Aus gutem Grund ist der Verkauf von Glühlampen inzwischen in der EU verboten. Aber leider gibt es immer noch Anhänger dieser veralteten Technik. Vergleicht man das Spektrum unten links mit der Normkurve für das Tag-Sehen, dann fällt auf, dass der intensivste Teil des Glühlampenlichts, die Wellenlängen größer 700 nm, überhaupt nicht mehr vom menschlichen Auge erfasst werden können. Sie liegen bereits im  Nahinfrarotbereich und dienen nur noch der elektrischen Beheizung des Raumes, auch im Sommer. Dagegen fehlen die blauen Spektralanteile für eine gute Farberkennung weitestgehend.</p>",
@@ -421,13 +421,13 @@ document.addEventListener("DOMContentLoaded", () => {
           [
               "<h2>Aktuelle Leuchtmittel</h2>",
               "<p id='questionanswer'>Wie funktioniert eine LED?</p>",
-              "<p>Moderne Leuchtmittel und Leuchten werden in LED Technik ausgeführt. Bei einer weiß-leuchtenden LED handelt es sich im Kern um eine blaue LED oder eine violette LED. Eine Beschichtung über der LED, das sogenannte Phosphor-Coating,enthält verschiedene Leuchtstoffe, die durch dieses blaue oder violette Licht angeregt werden und alle anderen Farbanteile des Lichtspektrums erzeugen.</p>",
+              "<p>Moderne Leuchtmittel und Leuchten werden in LED Technik ausgeführt. Bei einer weiß-leuchtenden LED handelt es sich im Kern um eine blaue LED oder eine violette LED. Eine Beschichtung über der LED, das sogenannte Phosphor-Coating, enthält verschiedene Leuchtstoffe, die durch dieses blaue oder violette Licht angeregt werden und alle anderen Farbanteile des Lichtspektrums erzeugen.</p>",
               "<p>Die meisten auf dem Markt befindlichen LEDs bestehen im Kern noch aus einer blauen LED. In diesem Fall wird das blaue Licht direkt genutzt, während  die restlichen Farbanteile durch die Leuchtmittel erzeugt werden. Aus physikalischen Gründen ergibt sich auf dieses Weise eine Lücke zwischen blau und grün, die nicht ausgeglichen werden kann. Damit das Licht trotzdem weiß ist, muss demnach in der Produktion der rote Bereich reduziert werden. Diese LEDs haben also nicht nur eine Türkis-Schwäche, sondern auch eine Rot-Schwäche.</p>",
               "<p>Bei den neuen Vollspektrum-LEDs ist das nicht mehr der Fall. Sie werden von kaum sichtbarem violettem UV-Licht angeregt. Das bedeutet: Alle sichtbaren Farbanteile entstehen nur noch durch Leuchtstoffe. Auf diese Weise gibt es keine Türkis-Schwäche mehr und die roten Spektralanteile müssen auch nicht mehr reduziert werden. Es entsteht ein nahezu perfektes Lichtspektrum.</p>",
               "<p id='questionanswer'>Warum werden nicht alle LEDs mit UV-Licht angeregt?</p>",
               "<p>Die Herstellung einer UV-LED ist heute immer noch wesentlich schwieriger als die Herstellung einer blauen LED. Das schlägt sich dementsprechend auch im Preis nieder. Alleine die LEDs, nicht die restlichen Komponenten des Leuchtmittels, sind um den Faktor 3 bis 4 teurer. Dazu kommt, dass moderne weiße LEDs, die im Kern mit blauem Licht betrieben werden, auch heute schon beachtlich gute Lichtspektren vorweisen können. Kurz gesagt haben es die Vollspektrum-LEDs schwer sich durchzusetzen. Dennoch sind sie verfügbar und in kritischen Bereichen durchaus  die bessere Wahl.</p>",
-              "<p id='questionanswer'>Das warmweiße LED-Spektrum (bis 3300 K)</p>",
-              "<p>In den  beiden Diagrammen unten sind links eine konventionelle warmweiße LED und rechts eine Vollspektrum-LED dargestellt. Bei der konventionellen LED ist noch der starke blaue Anteil und die Lücke zwischen blau und grün zu sehen, während die Vollspektrum-LED hier bereits einen sehr homogenen Abfall der Kurve aufweist. Trotzdem ist der Unterschied auf den ersten Blick sehr gering. Erst die Werte des Farbwiedergabeindexes zeigen  die Wahrheit:</p>",
+              "<p id='questionanswer'>Das warm weiße LED-Spektrum (bis 3300 K)</p>",
+              "<p>In den  beiden Diagrammen unten sind links eine konventionelle warm weiße LED und rechts eine Vollspektrum-LED dargestellt. Bei der konventionellen LED ist noch der starke blaue Anteil und die Lücke zwischen blau und grün zu sehen, während die Vollspektrum-LED hier bereits einen sehr homogenen Abfall der Kurve aufweist. Trotzdem ist der Unterschied auf den ersten Blick sehr gering. Erst die Werte des Farbwiedergabeindexes zeigen  die Wahrheit:</p>",
               
               `<table class="lighting-table">
                 <thead>
@@ -455,25 +455,25 @@ document.addEventListener("DOMContentLoaded", () => {
               "<img src='/images/3-4-LED-2-warm-spectrum.png' alt='square' />",
 
               "<p id='questionanswer'>Das neutral weiße LED-Spektrum (3300 K bis 5300 K)</p>",
-              "<p>Deutlicher wird  der Unterschied zwischen der konventionellen Technik und der Vollspektrum-Technik bei  neutral weißen LEDs. Während das - Spektrum der konventionellen LED links immer noch die Lücke zwischen blau und grün aufweist und damit technisch nicht ohne Rot-Schwäche auskommt, fällt im Diagramm der Vollspektrum-LED rechts das Licht in Richtung blau wieder gleichmäßig ab. Das zeigt sich auch im Farbwiedergabeindex:</p>",
+              "<p>Deutlicher wird  der Unterschied zwischen der konventionellen Technik und der Vollspektrum-Technik bei  neutral weißen LEDs. Während das Spektrum der konventionellen LED links immer noch die Lücke zwischen blau und grün aufweist und damit technisch nicht ohne Rot-Schwäche auskommt, fällt im Diagramm der Vollspektrum-LED rechts das Licht in Richtung blau wieder gleichmäßig ab. Das zeigt sich auch im Farbwiedergabeindex:</p>",
               
               `<table class="lighting-table">
                 <thead>
                   <tr>
                     <th>Leuchtmittel</th>
-                    <th>Konventionelle LED</th>
-                    <th>Vollspektrum LED</th>
+                    <th>R<sub>a</sub></th>
+                    <th>R<sub>e</sub></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Farbwiedergabeindex R<sub>a</sub></td>
+                    <td>Konventionelle LED</td>
                     <td>89</td>
-                    <td>97</td>
+                    <td>84</td>
                   </tr>
                   <tr>
-                    <td>Farbwiedergabeindex R<sub>e</sub></td>
-                    <td>84</td>
+                    <td>Vollspektrum LED</td>
+                    <td>97</td>
                     <td>98</td>
                   </tr>
                 </tbody>
@@ -490,19 +490,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 <thead>
                   <tr>
                     <th>Leuchtmittel</th>
-                    <th>Konventionelle LED</th>
-                    <th>Vollspektrum LED</th>
+                    <th>R<sub>a</sub></th>
+                    <th>R<sub>e</sub></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Farbwiedergabeindex R<sub>a</sub></td>
+                    <td>Konventionelle LED</td>
                     <td>85</td>
-                    <td>95</td>
+                    <td>79</td>
                   </tr>
                   <tr>
-                    <td>Farbwiedergabeindex R<sub>e</sub></td>
-                    <td>79</td>
+                    <td>Vollspektrum LED</td>
+                    <td>95</td>
                     <td>94</td>
                   </tr>
                 </tbody>
@@ -518,7 +518,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "<h2>Spektrum-Synthese</h2>",
             "<p id='questionanswer'>Was ist Spektrum-Synthese?</p>",
             "<p>Wie die vorangegangenen Abschnitte gezeigt haben, gibt es mittlerweile bereits Leuchtmittel mit einer sehr guten Farbwiedergabe. Das Problem ist für viele Einsatzmöglichkeiten der immer noch relativ hohe Preis. Außerdem werden Vollspektrum Beleuchtungen oft nur als fertige Lampe angeboten, aber nicht als Retrofit-Leuchtmittel. Unter Retrofit versteht man alle Leuchtmittel, die in gebräuchliche Fassungen wie E27 passen und damit Glühlampen und Leuchtstoffröhren ersetzen können. Eine Umrüstung der vorhandenen Beleuchtung fällt damit aus, wenn das Spektrum der konventionellen LEDs nicht ausreicht. Es muss in jedem Fall neu installiert werden.</p>",
-            "<p>Die Spektrum -Synthese bietet in diesem Fall eine kostengünstige Abhilfe. Vergleicht man zum Beispiel die Spektren der konventionellen warm weißen  und kalt weißen LED, dann fällt auf, dass die warm weiße LED ihr spektrales Maximum bei 620 nm hat, während das Spektrum der kalt weißen LED an diesem Punkt schon wieder abfällt. Kombiniert man diese beiden Leuchtmittel in einer Lampe, dann überlagern sich  ihre Spektren. Die Kunst dabei ist es die Leuchtmittel nach Farbtemperatur und Hersteller so zu kombinieren, dass ein wesentlich besseres Spektrum entsteht.</p>",
+            "<p>Die Spektrum-Synthese bietet in diesem Fall eine kostengünstige Abhilfe. Vergleicht man zum Beispiel die Spektren der konventionellen warm weißen  und kalt weißen LED, dann fällt auf, dass die warm weiße LED ihr spektrales Maximum bei 620 nm hat, während das Spektrum der kalt weißen LED an diesem Punkt schon wieder abfällt. Kombiniert man diese beiden Leuchtmittel in einer Lampe, dann überlagern sich  ihre Spektren. Die Kunst dabei ist es die Leuchtmittel nach Farbtemperatur und Hersteller so zu kombinieren, dass ein wesentlich besseres Spektrum entsteht.</p>",
             "<p>Da die Anzahl der verwendeten Leuchtmittel bei diesem Verfahren konstant bleibt, liegt der Preisunterschied für den Kunden nur in der Alanalyse und anschließenden Kombination der benötigten Komponenten durch eine Fachkraft.</p>",
             "<p id='questionanswer'>Ein Beispiel zur Spektrum-Synthese</p>",
             "<p>In einem Projekt ging es darum die Brillianz von Ausstellungsstücken zu erhöhen. Dazu wurden LED Spots mit zwei verschiedenen Farbtemperaturen der Philips K8 Reihe verwendet. Genauer gesagt handelte es sich um einen Spot mit warm weißer LED und einen Spot mit neutral weißer LED. Misst man die Überlagerung der beiden Leuchtmittel, dann erhält man das Spektrum unten rechts im Bild.</p>",
@@ -538,7 +538,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "<p id='questionanswer'>Leuchtstoffröhre vs. LED-Röhre – der Lichtstrom</p>",
             "<p>Das häufigste Argument gegen LED-Röhren ist der geringere Lichtstrom. Während eine 150 cm lange Leuchtstoffröhre einen durchschnittlichen Lichtstrom von 5100 Lumen abstrahlt, sind es bei einer LED-Röhre meistens nur um die 3700 Lumen. Warum werden keine Lichtstärkeren LED-Röhren gebaut? Die Antwort ist einfach: Weil es nicht nötig ist!</p>",
             "<p>Die Leuchtstoffröhre strahlt in alle Richtungen. Deswegen benötigt sie einen Reflektor, der das nach oben abgestrahlte Licht wieder nach unten richtet. Aber selbst wenn dieser Reflektor neu ist und gerade erst aus der Originalverpackung genommen wurde, hat er einen nicht unerheblichen Reflexionsverlust. Kommt noch ein wenig Staub dazu, dann gehen bereits ein Drittel der Lichtleistung verloren. Aus den 5100 Lumen werden somit ganz schnell nur noch 3400 Lumen. </p>",
-            "<p>Wie sieht es dagegen bei der LED-Röhre aus? Hier gehen die Reflexionsverluste gegen Null. Die Röhre strahlt nur in eine Richtung und ohne Optik ist der Öffnungswinkel der LEDs ungefähr 120o Grad. Das bedeutet, die Randbereiche des abgestrahlten Lichtstroms berühren je nach Bauart noch die Ränder des Lampengehäuses. Aber mehr passiert nicht. Die abgestrahlte Lichtleistung liegt demnach annähernd bei 3700 Lumen.</p>",
+            "<p>Wie sieht es dagegen bei der LED-Röhre aus? Hier gehen die Reflexionsverluste gegen Null. Die Röhre strahlt nur in eine Richtung und ohne Optik ist der Öffnungswinkel der LEDs ungefähr 120<sup>o</sup> Grad. Das bedeutet, die Randbereiche des abgestrahlten Lichtstroms berühren je nach Bauart noch die Ränder des Lampengehäuses. Aber mehr passiert nicht. Die abgestrahlte Lichtleistung liegt demnach annähernd bei 3700 Lumen.</p>",
             "<p id='questionanswer'>Leuchtstoffröhre vs. LED-Röhre – die Verlustleistung</p>",
             "<p>Eine Leuchtstoffröhre von 150 cm benötigt in der Regel zum Betrieb eine Leistung von 58 W. Ist ein elektronisches Vorschaltgerät eingebaut, so wird nur im Einschaltmoment  ein Zündimpuls erzeugt. Sonst gibt es keine weitere elektrische Verlustleistung. Wird die Röhre dagegen noch klassisch mit einem konventionellen Vorschaltgerät, einer Drossel, gezündet, dann fließt der Strom während der gesamten Betriebszeit durch dieses Bauteil hindurch. Durch die in Wärme umgesetzte Verlustleistung wird die Lampe sogar so warm, dass die Kunststoffteile des Gehäuses verspröden können. Messungen zeigen eine gesamte Verlustleistung von 90 W für eine Röhre mit Drossel. Zieht man davon die 58 W für die Röhre ab, dann bleibt eine Verlustleistung von 32 W für die Drossel übrig.</p>",
             "<p>Eine neutral weiße LED-Röhre mit einem Lichtstrom von 3700 Lumen liegt dagegen heute bei einer elektrischen Verlustleistung von 23 W. Da sie direkt an die Netzspannung angeschlossen werden kann, kommt keine weitere Verlustleistung hinzu.</p>",
