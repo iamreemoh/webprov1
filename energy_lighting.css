@@ -1,7 +1,7 @@
 /* General Reset */
 * {
     margin: 0;
-    padding: 0;
+    padding-top: 0;
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0; /* Initially at the bottom */
+    top: 0; /* Initially at the bottom */
     height: 80px; /* Full size when at the bottom */
     background: linear-gradient(to right, 
         rgb(13, 116, 64) 5%, 
@@ -31,12 +31,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Navbar after scrolling starts (moves to top) */
-.navbar.navbar-scrolled {
-    bottom: auto; /* Remove bottom positioning when scrolling */
-    top: 0;
-}
-
 /* Navbar content adjustment */
 .navbar .logo img {
   display: block; /* Ensure it is displayed */
@@ -47,11 +41,6 @@ body {
 
 .navbar .nav-links a {
     margin-left: 1rem; /* Optional adjustment */
-}
-
-.navbar.scrolled {
-    top: 0; /* Move to top on scroll */
-    bottom: auto; /* Remove bottom positioning */
 }
 
 .navbar .container {
@@ -87,96 +76,24 @@ body {
 
 
 /* Full-Screen Section Styles */
-/* Full-Screen Section with Parallax Effect */
-.full-screen-section {
-  position: relative;
-  height: calc(100vh - 80px); 
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  background-image: url('/iconsThumbs/Top-Page-2.jpg');
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Creates the parallax effect */
-  background-position: center calc(100% - 80px); /* Offsets 80px from the bottom */
-  background-color: #000;
+
+  
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into multiple rows */
+    justify-content: space-around; /* Ensures proper spacing between tiles */
+    gap: 2rem; /* Space between the tiles */
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 2;
 }
-
-/* Ensure the canvas covers the entire viewport */
-#canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5; /* Lower z-index to keep it under clickable elements */
-  pointer-events: none; /* Ensures it does NOT block clicks on other elements */
-}
-
-/* Invisible overlay to capture clicks */
-#canvas-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 15; /* Higher than canvas to capture interactions */
-  cursor: pointer;
-}
-
-
-.full-screen-content {
-    /* height: calc(100vh - 80px); */
-    z-index: 1; /* Ensures content stays above the background */
-    text-align: center;
-    color: #111;
-    padding: 20px;
-    background-color: transparent; /* Add a semi-transparent overlay for better readability */
-    border-radius: 10px; /* Optional: Adds rounded corners to the content box */
-}
-
-.full-screen-content h1 {
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-    color:rgb(7, 63, 35)
-}
-
-
-.full-screen-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-  section {
-    padding: 20px;
-    text-align: center;
-    min-height: 100px;
-    color: black;
-  }
-  section h2{
-    color: rgb(13, 116, 64);
-  }
-  #about {
-    margin-top: 100px;
-  }
-  .service-list {
-    text-align: left;
-    margin: auto;
-  }
-  .service-list h3 {
-      margin-bottom: 5px;
-      color: rgb(4, 136, 156);
-  }
 
 /* Individual Hero Services (Tile) */
 .hero-services {
+    margin-top: 80px;
     position: relative;
-    width: calc(50% - 1rem); /* Each tile takes 50% width minus spacing */
+    width: 50vw; /* Each tile takes 50% width minus spacing */
     background: white;
     border-radius: 8px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -469,6 +386,12 @@ body {
             width: 60px; /* Adjust the size of the scroll GIF */
         }
     
+        .hero-section {
+            display: flex;
+            flex-direction: column; /* Stack tiles vertically */
+            gap: 1rem; /* Reduce the gap between tiles */
+            padding: 1rem; /* Adjust padding for smaller screens */
+        }
         
         .serviceTitle{
             border-radius: 10px 10px 0px 0px;
