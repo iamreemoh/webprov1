@@ -129,6 +129,65 @@ body {
   cursor: pointer;
 }
 
+.hidden-login {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent; /* No background */
+  color: transparent; /* Hide text */
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hidden-login:hover {
+  background-color: transparent; /* No hover effect */
+  color: transparent; /* Keep text hidden */
+}
+
+
+.logout-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: greenyellow;
+  color:blue;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.logout-button:hover {
+  background-color: greenyellow;
+}
+
+.admin-only {
+  display: none; 
+}
+.remove-btn {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+}
+
+#services, #about {
+  padding: 10px 20px;
+  margin: 20px auto;  /* Center the sections */
+  width: 95vw;  /* Set width to 70% of the viewport width */
+}
+
+/* ✅ Justify paragraphs inside #servicesList and #aboutContent */
+#servicesList p, #aboutContent p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
 
 .full-screen-content {
     /* height: calc(100vh - 80px); */

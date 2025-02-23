@@ -43,20 +43,18 @@
 
   <!-- TEXT SECTIONS -->
 
-  <section id="services">
-    <h2>Services</h2>
-    <div class="service-list">
-        <h3>Energy Audits</h3>
-        <p>Comprehensive energy assessments to optimize efficiency.</p>        
-        <h3>Cost Reduction Strategies</h3>
-        <p>Cut down on energy expenses with smart planning.</p>
-    </div>
-  </section>
-
-  <section id="about">
-      <h2>About Us</h2>
-      <p>With years of expertise, we provide top-notch energy consulting services to improve efficiency and sustainability.</p>
-  </section>
+      <!-- 🔹 Hidden Login Button (Bottom-Right Corner) -->
+      <button id="loginBtn" class="hidden-login">🔑 Admin Login</button>
+      <button id="logoutBtn" class="logout-button" style="display:none;">Save Modifications and Logout</button>
+  
+      <section id="services">
+        <div id="servicesList"></div> <!-- ✅ This is where new content will be added -->
+      </section>
+      
+      <section id="about">
+          <div id="aboutContent"></div> <!-- ✅ This is where new content will be added -->
+      </section>
+      
 
   <footer class="footer">
     <div class="fcontainer">
@@ -121,6 +119,8 @@
     </div>
   </footer> 
   
-  <script src="script.js" defer></script>
+  <!-- <script src="script.js" defer></script> -->
+  <script type="module" src="script.js"></script>
+
 </body>
 </html>
