@@ -86,20 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
                
         mainContent.innerHTML = contentHTML;
 
-        // // Add fade-in/out logic here
-        // const slides = document.querySelectorAll(".about-slider .slide");
-        // let currentSlide = 0;
-
-        // function showNextSlide() {
-        //     slides[currentSlide].classList.remove("active");
-        //     currentSlide = (currentSlide + 1) % slides.length;
-        //     slides[currentSlide].classList.add("active");
-        // }
-
-        // if (slides.length > 0) {
-        //     slides[currentSlide].classList.add("active");
-        //     setInterval(showNextSlide, 2000);
-        // }
 
         document.querySelectorAll("[data-page-key]").forEach((link) => {
             link.classList.remove("active");

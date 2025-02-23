@@ -106,17 +106,26 @@ body {
 
 
 .visit-page-text {
-    margin-top: auto; /* Push it to the bottom of the tile */
-    padding: 10px;
-    background-color: #c0daf7; /* Button-like background */
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    transition: background-color 0.3s ease;
+  margin-top: auto; /* Push it to the bottom of the tile */
+  padding: 10px;
+  background-color: #d5e4f5; /* Default button background */
+  color: rgba(59, 59, 247, 0.911);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Makes it clear it's clickable */
+  border-radius: 5px; /* Optional: Smooth rounded corners */
 }
 
+/* Hover Effect */
+.visit-page-text:hover {
+  background-color: #b0d0f0; /* Slightly darker blue */
+  color: rgb(0, 0, 255); /* Darker text color */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for pop-out effect */
+}
 
 .serviceTitle{
     background-color: #333;
