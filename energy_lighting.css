@@ -123,7 +123,7 @@ body {
 .visit-page-text:hover {
   background-color: #b0d0f0; /* Slightly darker blue */
   color: rgb(0, 0, 255); /* Darker text color */
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(0.99); /* Slight zoom effect */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for pop-out effect */
 }
 

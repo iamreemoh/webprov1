@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="hero-text">
           <p>${service.description}</p>
-          <div class="visit-page-text">Visit Page</div>
+          <div class="visit-page-text">Hier geht es zu den Informationen</div>
         </div>
       `;
     

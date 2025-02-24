@@ -269,8 +269,8 @@ document.addEventListener("DOMContentLoaded", () => {
   resizeCanvas();
 
   // Define keywords and rotation properties
-  const keywordsLeft = ["Spektrum-Analyse", "Technische-Entwicklung", "Licht-Parameter", "Licht-Schulung","Lichtflicker-Messung","Spektrum-Synthese"];
-  const keywordsRight = ["Sanierung-sfahrplan", "Gewerbe", "Energie-ausweise", "Lebenszyklus-Analyse","QNG","LCA","Wohnen"];
+  const keywordsLeft = ["Spektrum Analyse", "Technische Entwicklung", "Licht Parameter", "Licht Schulung","Lichtflicker Messung","Spektrum Synthese"];
+  const keywordsRight = ["Sanierung--sfahrplan", "Gewerbe", "Energie--ausweise", "Lebenszyklus Analyse","QNG","LCA","Wohnen"];
 
   const radiusLeft = 230;
   const radiusRight = 230;
@@ -368,37 +368,55 @@ function drawGlassyRectangle(x, y, width, height, cornerRadius = 10, isHovered =
 
 // Function to draw a glassy rectangle with text (splitting long texts into two lines)
 function drawGlassRectWithText(x, y, text, textColor, isHovered = false) {
-  const rectWidth = 130;  
-  const rectHeight = 60;  
-  const cornerRadius = 10;
+    const rectWidth = 130;  
+    const rectHeight = 60;  
+    const cornerRadius = 10;
 
-  // Set colors based on hover state
-  ctx.fillStyle = isHovered ? "rgba(255, 253, 208, 0.9)" : "rgba(241, 241, 241, 0.82)"; 
-  ctx.strokeStyle = isHovered ? "rgba(255, 204, 0, 0.4)" : "rgba(155, 155, 155, 0.4)";
-  ctx.lineWidth = 2;
+    // Set colors based on hover state
+    ctx.fillStyle = isHovered ? "rgba(255, 253, 208, 0.9)" : "rgba(241, 241, 241, 0.82)"; 
+    ctx.strokeStyle = isHovered ? "rgba(255, 204, 0, 0.4)" : "rgba(155, 155, 155, 0.4)";
+    ctx.lineWidth = 2;
 
-  // Draw glassy rectangle
-  ctx.beginPath();
-  ctx.roundRect(x - rectWidth / 2, y - rectHeight / 2, rectWidth, rectHeight, cornerRadius);
-  ctx.fill();
-  ctx.stroke();
+    // Draw glassy rectangle
+    ctx.beginPath();
+    ctx.roundRect(x - rectWidth / 2, y - rectHeight / 2, rectWidth, rectHeight, cornerRadius);
+    ctx.fill();
+    ctx.stroke();
 
-  // Set text color
-  ctx.fillStyle = textColor;
-  ctx.font = "bold 18px Arial";
-  ctx.textAlign = "center";
+    // Set text color
+    ctx.fillStyle = textColor;
+    ctx.font = "bold 18px Arial";
+    ctx.textAlign = "center";
 
-  // Split text if it contains a "-"
-  let lines = text.includes("-") ? text.split("-") : [text];
-  lines = lines.map(line => line.trim());
+    // Normalize multiple hyphens ("--" or more) to a single hyphen
+    let formattedText = text.replace(/-{2,}/g, "-");
+    
+    // Split at spaces
+    let words = formattedText.split(" ");
 
-  // Draw text in two lines if needed
-  if (lines.length === 2) {
-      ctx.fillText(lines[0], x, y - 5);
-      ctx.fillText(lines[1], x, y + 20);
-  } else {
-      ctx.fillText(text, x, y + 6);
-  }
+    // Process each word individually
+    let processedWords = words.map(word => {
+        let parts = word.split("-");
+        if (parts.length > 2) {
+            // If more than two parts, keep the first hyphen with the first part
+            return [parts[0] + "-", parts.slice(1).join("-")];
+        } else if (parts.length === 2) {
+            // If exactly one hyphen, retain it in the first part
+            return [parts[0] + "-", parts[1]];
+        }
+        return [word]; // No hyphen, keep as-is
+    });
+
+    // Flatten processed words into a single array
+    let lines = processedWords.flat();
+
+    // Draw text lines
+    if (lines.length === 2) {
+        ctx.fillText(lines[0], x, y - 5);
+        ctx.fillText(lines[1], x, y + 20);
+    } else {
+        ctx.fillText(text, x, y + 6);
+    }
 }
 
 
