@@ -168,8 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const joinOperation = tempString.join(", ");
-            formData.append("Multiplei", joinOperation);    
+            formData.append("interests", joinOperation);    
 
+            for (const [key, value] of formData.entries()) {
+                console.log(`Sending to EmailJS - ${key}: ${value}`);
+            }
+            
             // Send the form data using EmailJS
             emailjs
                 .sendForm("default_service", "template_r46ay5c", this)
