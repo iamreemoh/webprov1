@@ -5,14 +5,15 @@ import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc } from "https
 
 // ✅ Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyArvZZLdS5VpY12J2MXoefBMdsV9AIhB4c",
-    authDomain: "irreiner-978b6.firebaseapp.com",
-    projectId: "irreiner-978b6",
-    storageBucket: "irreiner-978b6.appspot.com",
-    messagingSenderId: "418027078906",
-    appId: "1:418027078906:web:3d8c70cba29a09bb53f543",
-    measurementId: "G-8H5T7RT0GE"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    // measurementId: import.meta.env.VITE_FIREBASE_measurementId
 };
+
 
 // ✅ Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -270,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define keywords and rotation properties
   const keywordsLeft = ["Spektrum Analyse", "Technische Entwicklung", "Licht Parameter", "Licht Schulung","Lichtflicker Messung","Spektrum Synthese"];
-  const keywordsRight = ["Sanierung--sfahrplan", "Gewerbe", "Energie--ausweise", "Lebenszyklus Analyse","QNG","LCA","Wohnen"];
+  const keywordsRight = ["Sanierungs--fahrpläne", "Gewerbe", "Energie--ausweise", "Lebenszyklus Analyse","QNG","LCA","Wohnen"];
 
   const radiusLeft = 230;
   const radiusRight = 230;
@@ -296,47 +297,73 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Function to draw rotating text on the canvas
-function drawRotatingText(isHoveringLeft = false, isHoveringRight = false) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.font = "20px Arial";
-  ctx.textAlign = "center";
 
-  const rectWidth = 210;  
-  const rectHeight = 60;  
-
-  // Draw central glassy rectangles
-  drawGlassyRectangle(centerLeft.x - rectWidth / 2, centerLeft.y - rectHeight / 2, rectWidth, rectHeight, 10, isHoveringLeft);
-  drawGlassyRectangle(centerRight.x - rectWidth / 2, centerRight.y - rectHeight / 2, rectWidth, rectHeight, 10, isHoveringRight);
-
-  // Draw center text
-  ctx.fillStyle = isHoveringLeft ? "rgba(255, 153, 0, 0.5)" : "rgb(4, 136, 156)";
-  ctx.font = "bold 20px Arial"; 
-  ctx.fillText("Beleuchtungstechnik", centerLeft.x, centerLeft.y + 5);
-
-  ctx.fillStyle = isHoveringRight ? "rgba(255, 153, 0, 0.5)" : "rgb(13, 116, 64)";
-  ctx.font = "bold 20px Arial";
-  ctx.fillText("Energieberatung", centerRight.x, centerRight.y + 5);
-
-  // **Left Side (Sun Area)**
-  keywordsLeft.forEach((text, i) => {
-      const theta = angle + (i * (Math.PI * 2)) / keywordsLeft.length;
-      const x = centerLeft.x + radiusLeft * Math.cos(theta);
-      const y = centerLeft.y + radiusLeft * Math.sin(theta);
-      drawGlassRectWithText(x, y, text, "rgb(4, 136, 156)", isHoveringLeft);
-  });
-
-  // **Right Side (Bicycle Area)**
-  keywordsRight.forEach((text, i) => {
-      const theta = -angle + (i * (Math.PI * 2)) / keywordsRight.length;
-      const x = centerRight.x + radiusRight * Math.cos(theta);
-      const y = centerRight.y + radiusRight * Math.sin(theta);
-      drawGlassRectWithText(x, y, text, "rgb(13, 116, 64)", isHoveringRight);
-  });
-
-  angle += 0.00003; // Slow down rotation speed
-  requestAnimationFrame(() => drawRotatingText(isHoveringLeft, isHoveringRight));
+// Function to check if the device is mobile
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
+
+// Modify canvas rendering based on device type
+function drawRotatingText(isHoveringLeft = false, isHoveringRight = false) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.font = "20px Arial";
+    ctx.textAlign = "center";
+
+    const rectWidth = 210;  
+    const rectHeight = 60;  
+
+    if (isMobileDevice()) {
+        // Adjust center positions for mobile
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2 - 40; 
+
+        // Draw central glassy rectangles (centered)
+        drawGlassyRectangle(centerX - rectWidth / 2, centerY - rectHeight / 2, rectWidth, rectHeight, 10, isHoveringLeft);
+        drawGlassyRectangle(centerX - rectWidth / 2, centerY + 80 - rectHeight / 2, rectWidth, rectHeight, 10, isHoveringRight);
+
+        // Draw center text (centered)
+        ctx.fillStyle = "rgb(4, 136, 156)";
+        ctx.font = "bold 20px Arial"; 
+        ctx.fillText("Beleuchtungstechnik", centerX, centerY + 5);
+
+        ctx.fillStyle = "rgb(13, 116, 64)";
+        ctx.font = "bold 20px Arial";
+        ctx.fillText("Energieberatung", centerX, centerY + 85);
+    } else {
+        // Desktop: Keep original positions
+        drawGlassyRectangle(centerLeft.x - rectWidth / 2, centerLeft.y - rectHeight / 2, rectWidth, rectHeight, 10, isHoveringLeft);
+        drawGlassyRectangle(centerRight.x - rectWidth / 2, centerRight.y - rectHeight / 2, rectWidth, rectHeight, 10, isHoveringRight);
+
+        // Draw center text in original positions
+        ctx.fillStyle = "rgb(4, 136, 156)";
+        ctx.font = "bold 20px Arial"; 
+        ctx.fillText("Beleuchtungstechnik", centerLeft.x, centerLeft.y + 5);
+
+        ctx.fillStyle = "rgb(13, 116, 64)";
+        ctx.font = "bold 20px Arial";
+        ctx.fillText("Energieberatung", centerRight.x, centerRight.y + 5);
+
+        // Draw rotating keywords only for desktop
+        keywordsLeft.forEach((text, i) => {
+            const theta = angle + (i * (Math.PI * 2)) / keywordsLeft.length;
+            const x = centerLeft.x + radiusLeft * Math.cos(theta);
+            const y = centerLeft.y + radiusLeft * Math.sin(theta);
+            drawGlassRectWithText(x, y, text, "rgb(4, 136, 156)", isHoveringLeft);
+        });
+
+        keywordsRight.forEach((text, i) => {
+            const theta = -angle + (i * (Math.PI * 2)) / keywordsRight.length;
+            const x = centerRight.x + radiusRight * Math.cos(theta);
+            const y = centerRight.y + radiusRight * Math.sin(theta);
+            drawGlassRectWithText(x, y, text, "rgb(13, 116, 64)", isHoveringRight);
+        });
+
+        angle += 0.00003;
+    }
+
+    requestAnimationFrame(() => drawRotatingText(isHoveringLeft, isHoveringRight));
+}
+
 
 
 // Function to draw a semi-transparent glassy rectangle with a border
