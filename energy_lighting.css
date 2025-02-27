@@ -1,0 +1,532 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Navbar Styles */
+/* Base navbar style */
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; /* Initially at the bottom */
+    height: 80px; /* Full size when at the bottom */
+    background: linear-gradient(to right, 
+        rgb(13, 116, 64) 5%, 
+        rgb(4, 136, 156) 100%
+    );
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* Navbar content adjustment */
+.navbar .logo img {
+  display: block; /* Ensure it is displayed */
+  width: 200px; /* Allow intrinsic width */
+  height: auto; /* Allow intrinsic height */
+  max-width: 100%; /* Prevent oversizing */ 
+}
+
+.navbar .nav-links a {
+    margin-left: 1rem; /* Optional adjustment */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+  }
+
+
+/* Full-Screen Section Styles */
+
+  
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into multiple rows */
+    justify-content: space-around; /* Ensures proper spacing between tiles */
+    gap: 2rem; /* Space between the tiles */
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Individual Hero Services (Tile) */
+.hero-services {
+    margin-top: 80px;
+    position: relative;
+    width: 50vw; /* Each tile takes 50% width minus spacing */
+    background: white;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.visit-page-text {
+  margin-top: auto; /* Push it to the bottom of the tile */
+  padding: 10px;
+  background-color: #d5e4f5; /* Default button background */
+  color: rgba(59, 59, 247, 0.911);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Makes it clear it's clickable */
+  border-radius: 5px; /* Optional: Smooth rounded corners */
+}
+
+/* Hover Effect */
+.visit-page-text:hover {
+  background-color: #b0d0f0; /* Slightly darker blue */
+  color: rgb(0, 0, 255); /* Darker text color */
+  transform: scale(0.99); /* Slight zoom effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for pop-out effect */
+}
+
+.serviceTitle{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.serviceTitle:hover {
+    background-color: #222;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; /* Ensures consistent aspect ratio */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.hero-description-overlay {
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Light background initially */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: background 0.3s ease, padding 0.3s ease;
+    pointer-events: none; /* No interaction when not hovered */
+}
+
+
+/* Static Description Section Below Image */
+.hero-text {
+    text-align: justify;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition properties */
+    overflow: hidden;
+    /* max-height: calc(1.9rem * 4 + 1rem);  */
+    opacity: 0.9; /* Slightly less opaque for a clean look */
+}
+
+
+/* General Footer Styling */
+.footer {
+    background-color: #20232a;
+    color: #ffffff;
+    /* padding: 20px 20px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  .fcontainer {
+    display: flex;
+    justify-content: space-around; /* Spread items farther apart */
+    align-items: center;; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 40px; /* Add spacing between columns */
+    padding-top: 4rem;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1; /* Ensure equal width for all columns */
+    max-width: 300px; /* Limit width for readability */
+    min-width: 200px; /* Prevent columns from shrinking too much */
+  }
+  
+  /* Contact Info Styling */
+  .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #61dafb;
+  }
+  
+  .contact-info p,
+  .contact-details p {
+    line-height: 1.6;
+    font-size: 0.9em;
+  }
+  
+  .contact-info a,
+  .contact-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover,
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Links Styling */
+  .footer-links nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links nav ul li {
+    margin-bottom: 8px;
+    margin-left:50%;
+  }
+  
+  .footer-links nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-links nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+  } 
+
+  /* Hide the hamburger button on larger screens */
+@media screen and (min-width: 769px) {
+    .hamburger {
+      display: none; /* Completely hide on larger screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      height: 60px; /* Adjusted height */
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .navbar .logo img {
+      width: 100px; /* Adjusted size for mobile */
+    }
+  
+    /* Hamburger Icon */
+    .hamburger {
+        display: block; /* Show only on mobile */
+        font-size: 1.8rem; /* Slightly bigger */
+        color: white;
+        cursor: pointer;
+        background: none;
+        border: none;
+        z-index: 1000; /* Keep on top */
+        position: absolute; /* Position it absolutely within the navbar */
+        right: 10px; /* Align it to the right side */
+        top: 50%; /* Vertically center */
+        transform: translateY(-50%); /* Adjust for perfect centering */
+      }
+  
+    /* Change hamburger to X when active */
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0; /* Hide the middle line */
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0;
+    }
+  
+    .hamburger span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      margin: 6px 0;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  
+    /* Navigation Menu */
+    .nav-links {
+      display: none; /* Hidden by default */
+      position: absolute;
+      top: 60px; 
+      /* top: 50%; */
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to right, rgb(13, 116, 64) 5%, rgb(4, 136, 156) 100%);
+      flex-direction: column; /* Stack links vertically */
+      padding: 10px 0;
+      /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); */
+      z-index: 1001;
+      border-bottom-left-radius: 10px; /* Bottom left corner */
+      border-bottom-right-radius: 10px; /* Bottom right corner */
+    }
+  
+    .nav-links a {
+      padding: 10px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  
+    .nav-links a:hover {
+      background: rgba(255, 204, 0, 0.8); /* Highlight effect on hover */
+      color: #000;
+    }
+  
+    /* Show menu when active */
+    .nav-links.active {
+      display: flex;
+    }
+
+        /* Full-Screen Section */
+        .full-screen-section {
+            height: 80vh; /* Reduce height to fit better on mobile */
+            background-position: center center; /* Center the background image */
+            background-attachment: scroll; 
+        }
+    
+        /* Full-Screen Content */
+        .full-screen-content {
+            padding: 10px;
+            color: #111;
+            background-color: transparent;
+        }
+    
+        .full-screen-content h1 {
+            font-size: 1.2rem; /* Reduce font size for mobile */
+            margin-bottom: 0.8rem;
+        }
+    
+        .full-screen-content p {
+            font-size: 1rem; /* Adjust paragraph font size */
+            margin-bottom: 1.5rem;
+        }
+    
+        #scrollDownGif {
+            bottom: 50px; /* Adjust the position for better spacing */
+            left: 50%; /* Center the GIF horizontally */
+            transform: translateX(-50%); /* Ensure it's perfectly centered */
+            width: 60px; /* Adjust the size of the scroll GIF */
+        }
+    
+        .hero-section {
+            display: flex;
+            flex-direction: column; /* Stack tiles vertically */
+            gap: 1rem; /* Reduce the gap between tiles */
+            padding: 1rem; /* Adjust padding for smaller screens */
+        }
+        
+        .serviceTitle{
+            border-radius: 10px 10px 0px 0px;
+        }
+        .hero-services {
+            width: 100%; /* Take full width of the screen */
+            border-radius: 0; /* Remove border radius for a cleaner look */
+            box-shadow: none; /* Remove shadows for simplicity */
+        }
+    
+        .hero-image {
+            aspect-ratio: auto; /* Allow natural aspect ratio of the image */
+            border-radius: 0; /* Remove rounded corners */
+            width: 100%; /* Full width */
+            overflow: visible; /* Ensure visibility of the full image */
+        }
+    
+        .hero-image img {
+            object-fit: cover; /* Ensure the image fills the area */
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px 5px 0 0;
+        }
+    
+        .hero-description-overlay {
+            background:#ccc; /* Light grey background */
+            color: #222; /* Darker text for readability */
+            padding: 1rem;
+            text-align: center; /* Align text to the left for readability */
+            position: static; /* Make it part of the document flow */
+            width: 100%; /* Full width */
+            font-size: 0.9rem; /* Adjust font size for smaller screens */
+        }
+    
+        .hero-text {
+            text-align: justify;
+            padding: 1rem;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem; /* Adjust font size for mobile */
+            color: #555;
+            line-height: 1.6; /* Adjust line height for readability */
+            opacity: 1; /* Fully visible */
+            max-height: none; /* Remove max-height restriction */
+            border: 1px solid #ccc; /* Thin border with a light grey color */
+            border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+            background: #fff; /* Optional: Add a white background for contrast */
+        }        
+    
+        .visit-page-text {
+            margin-top: 1rem;
+            padding: 10px;
+            background-color: #357ab8; /* Blue background for buttons */
+            color: white;
+            font-size: 0.9rem; /* Adjust font size for mobile */
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+    .footer {
+        padding: 20px;
+        background-color: #20232a; /* Keep the same background color */
+      }
+    
+      .fcontainer {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Add spacing between sections */
+        padding-top: 10px;
+      }
+    
+      /* Move footer-links to the top */
+      .footer-links {
+        order: 1; /* Set order to display first */
+        text-align: center; /* Center-align links for better appearance */
+        /* margin-bottom: 20px; */
+      }
+    
+      .footer-links nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+    
+      .footer-links nav ul li {
+        margin: 10px 0; /* Add spacing between links */
+      }
+    
+      .footer-links nav ul li a {
+        font-size: 1em;
+        color: #61dafb; /* Keep link color consistent */
+        text-decoration: none;
+      }
+    
+      .footer-links nav ul li a:hover {
+        text-decoration: underline;
+      }
+    
+      /* Align contact-info and contact-details */
+      .contact-info {
+        order: 2; /* Display below links */
+        text-align: left; /* Keep address left-aligned */
+        margin-bottom: 20px;
+      }
+    
+      .contact-details {
+        order: 3; /* Display below contact-info */
+        display: flex;
+        justify-content: center; /* Center the logo */
+      }
+    
+      .contact-details img {
+        max-width: 80%;
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+      /* Footer-bottom centered */
+      .footer-bottom {
+        order: 4; /* Display last */
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+      }
+  }
+  
+  
+  
+  

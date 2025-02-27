@@ -1,0 +1,527 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Navbar Styles */
+/* Base navbar style */
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Initially at the bottom */
+    height: 80px; /* Full size when at the bottom */
+    background: linear-gradient(to right, 
+        rgb(13, 116, 64) 5%, 
+        rgb(4, 136, 156) 100%
+    );
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* Navbar after scrolling starts (moves to top) */
+.navbar.navbar-scrolled {
+    bottom: auto; /* Remove bottom positioning when scrolling */
+    top: 0;
+}
+
+/* Navbar content adjustment */
+.navbar .logo img {
+  display: block; /* Ensure it is displayed */
+  width: 200px; /* Allow intrinsic width */
+  height: auto; /* Allow intrinsic height */
+  max-width: 100%; /* Prevent oversizing */ 
+}
+
+.navbar .nav-links a {
+    margin-left: 1rem; /* Optional adjustment */
+}
+
+.navbar.scrolled {
+    top: 0; /* Move to top on scroll */
+    bottom: auto; /* Remove bottom positioning */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+  }
+
+
+/* Full-Screen Section Styles */
+/* Full-Screen Section with Parallax Effect */
+.full-screen-section {
+  position: relative;
+  height: calc(100vh - 80px); 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background-image: url('/iconsThumbs/hero-bike-scene.jpeg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Creates the parallax effect */
+  background-position: center calc(100% - 80px); /* Offsets 80px from the bottom */
+  background-color: #000;
+}
+
+/* Ensure the canvas covers the entire viewport */
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5; /* Lower z-index to keep it under clickable elements */
+  pointer-events: none; /* Ensures it does NOT block clicks on other elements */
+}
+
+/* Invisible overlay to capture clicks */
+#canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 15; /* Higher than canvas to capture interactions */
+  cursor: pointer;
+}
+
+.hidden-login {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent; /* No background */
+  color: transparent; /* Hide text */
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hidden-login:hover {
+  background-color: transparent; /* No hover effect */
+  color: transparent; /* Keep text hidden */
+}
+
+
+.logout-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: greenyellow;
+  color:blue;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.logout-button:hover {
+  background-color: greenyellow;
+}
+
+.admin-only {
+  display: none; 
+}
+.remove-btn {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+}
+
+#services, #about {
+  padding: 10px 20px;
+  margin: 20px auto;  /* Center the sections */
+  width: 95vw;  /* Set width to 70% of the viewport width */
+}
+
+/* ✅ Justify paragraphs inside #servicesList and #aboutContent */
+#servicesList p, #aboutContent p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.full-screen-content {
+    /* height: calc(100vh - 80px); */
+    z-index: 1; /* Ensures content stays above the background */
+    text-align: center;
+    color: #111;
+    padding: 20px;
+    background-color: transparent; /* Add a semi-transparent overlay for better readability */
+    border-radius: 10px; /* Optional: Adds rounded corners to the content box */
+}
+
+.full-screen-content h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color:rgb(7, 63, 35)
+}
+
+
+.full-screen-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+  section {
+    padding: 20px;
+    text-align: center;
+    min-height: 100px;
+    color: black;
+  }
+  section h2{
+    color: rgb(13, 116, 64);
+  }
+  #about {
+    margin-top: 100px;
+  }
+  .service-list {
+    text-align: left;
+    margin: auto;
+  }
+  .service-list h3 {
+      margin-bottom: 5px;
+      color: rgb(4, 136, 156);
+  }
+
+/* Individual Hero Services (Tile) */
+.hero-services {
+    position: relative;
+    width: calc(50% - 1rem); /* Each tile takes 50% width minus spacing */
+    background: white;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.visit-page-text {
+    margin-top: auto; /* Push it to the bottom of the tile */
+    padding: 10px;
+    background-color: #c0daf7; /* Button-like background */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.serviceTitle{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.serviceTitle:hover {
+    background-color: #222;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; /* Ensures consistent aspect ratio */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.hero-description-overlay {
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Light background initially */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: background 0.3s ease, padding 0.3s ease;
+    pointer-events: none; /* No interaction when not hovered */
+}
+
+
+/* Static Description Section Below Image */
+.hero-text {
+    text-align: justify;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition properties */
+    overflow: hidden;
+    /* max-height: calc(1.9rem * 4 + 1rem);  */
+    opacity: 0.9; /* Slightly less opaque for a clean look */
+}
+
+
+/* General Footer Styling */
+.footer {
+    background-color: #20232a;
+    color: #ffffff;
+    /* padding: 20px 20px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  .fcontainer {
+    display: flex;
+    justify-content: space-around; /* Spread items farther apart */
+    align-items: center;; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 40px; /* Add spacing between columns */
+    padding-top: 4rem;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1; /* Ensure equal width for all columns */
+    max-width: 300px; /* Limit width for readability */
+    min-width: 200px; /* Prevent columns from shrinking too much */
+  }
+  
+  /* Contact Info Styling */
+  .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #61dafb;
+  }
+  
+  .contact-info p,
+  .contact-details p {
+    line-height: 1.6;
+    font-size: 0.9em;
+  }
+  
+  .contact-info a,
+  .contact-details a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover,
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Links Styling */
+  .footer-links nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links nav ul li {
+    margin-bottom: 8px;
+    margin-left:50%;
+  }
+  
+  .footer-links nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-links nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+  } 
+
+  @media screen and (max-width: 768px) {
+    /* Ensure content width fits within the viewport */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+  }
+
+  .hamburger span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      margin: 6px auto;
+      transition: all 0.3s ease-in-out;
+  }
+
+  /* Active Hamburger Menu (Transforms into X) */
+  .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Make sure the menu appears */
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to right, rgb(13, 116, 64) 5%, rgb(4, 136, 156) 100%);
+      z-index: 1001;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav-links a {
+      color: white;
+      font-size: 1.2rem;
+      padding: 10px;
+      display: block;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+    /* Adjust hero section */
+    .full-screen-section {
+        height: 75vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .full-screen-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .full-screen-content p {
+        font-size: 1rem;
+    }
+
+    /* Services Section */
+    .hero-services {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-description-overlay {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Footer improvements */
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .fcontainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-links nav ul {
+        padding: 0;
+    }
+
+    .footer-links nav ul li {
+        margin: 10px 0;
+    }
+
+    .contact-details img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .footer-bottom {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+}
