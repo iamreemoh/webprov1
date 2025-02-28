@@ -341,7 +341,7 @@ function drawRotatingText(isHoveringLeft = false, isHoveringRight = false) {
         ctx.fillStyle = "rgb(13, 116, 64)";
         ctx.font = "bold 20px Arial";
         ctx.fillText("Energieberatung", centerRight.x, centerRight.y + 5);
-
+        
         // Draw rotating keywords only for desktop
         keywordsLeft.forEach((text, i) => {
             const theta = angle + (i * (Math.PI * 2)) / keywordsLeft.length;
@@ -374,6 +374,7 @@ function drawGlassyRectangle(x, y, width, height, cornerRadius = 10, isHovered =
       ctx.fillStyle = "rgba(255, 253, 208, 0.9)"; // Warm yellowish-white
       ctx.shadowColor = "rgba(255, 204, 0, 0.4)"; // Yellow glow effect
       ctx.shadowBlur = 20; // Increase glow on hover
+      
   } else {
       ctx.fillStyle = "rgba(241, 241, 241, 0.82)"; // Normal glassy white
       ctx.shadowBlur = 0; // No shadow
