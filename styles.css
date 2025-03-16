@@ -409,6 +409,43 @@ body {
     padding-top: 15px;
   } 
 
+  /* Mobile Navigation */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
   @media screen and (max-width: 768px) {
     /* Ensure content width fits within the viewport */
     html, body {
@@ -417,62 +454,36 @@ body {
     }
 
     .hamburger {
-      display: block;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 1000;
+      display: flex;
   }
-
-  .hamburger span {
-      display: block;
-      width: 30px;
-      height: 4px;
-      background-color: white;
-      margin: 6px auto;
-      transition: all 0.3s ease-in-out;
-  }
-
-  /* Active Hamburger Menu (Transforms into X) */
-  .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-  }
-  .hamburger.active span:nth-child(2) {
-      opacity: 0;
-  }
-  .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  /* Make sure the menu appears */
+  
   .nav-links {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 60px;
+      top: 70px;
       left: 0;
       width: 100%;
       background: linear-gradient(to right, rgb(13, 116, 64) 5%, rgb(4, 136, 156) 100%);
-      z-index: 1001;
       text-align: center;
-      padding: 10px 0;
+      padding: 20px 0;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
-
-  .nav-links a {
-      color: white;
-      font-size: 1.2rem;
-      padding: 10px;
-      display: block;
-  }
-
+  
   .nav-links.active {
       display: flex;
+  }
+  
+  .nav-links a {
+      padding: 15px;
+      width: 100%;
+      display: block;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+  }
+  
+  .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
   }
 
     /* Adjust hero section */

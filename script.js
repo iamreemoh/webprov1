@@ -194,7 +194,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// Fix for mobile button navigation inside full-screen-section
+if (window.innerWidth <= 768) {
+    document.querySelector(".full-screen-section").addEventListener("click", (event) => {
+        if (event.target.closest(".energy-button")) {
+            window.location.href = "energy.html";
+        } else if (event.target.closest(".lighting-button")) {
+            window.location.href = "lighting.html";
+        }
+    });
+}
 
 
 
@@ -232,6 +241,15 @@ window.addEventListener('scroll', function() {
   }
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll position
+      // Close navigation menu when a link is clicked on mobile
+      document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            }
+        });
+    });
 });
 
 
